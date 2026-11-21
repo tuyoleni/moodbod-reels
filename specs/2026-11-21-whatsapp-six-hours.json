@@ -1,0 +1,489 @@
+{
+ "slug": "moodbod-whatsapp-six-hours",
+ "bg": "peach",
+ "voice": "af_heart",
+ "scenes": [
+  {
+   "type": "stage",
+   "lines": [
+    "In twenty twenty one, WhatsApp went dark for six hours."
+   ],
+   "headline": "In 2021, WhatsApp|went dark for [[6 hours.]]",
+   "chip": "4 OCT 2021",
+   "objects": [
+    {
+     "k": "awning",
+     "x": 0,
+     "y": 10,
+     "w": 584
+    },
+    {
+     "k": "person",
+     "x": 236,
+     "y": 204,
+     "s": 1.16,
+     "skin": "a",
+     "shirt": "cream",
+     "apron": "#d4553a",
+     "pose": "hold",
+     "expr": "smile",
+     "d": 0.3,
+     "enter": "pop",
+     "expr2": "worried",
+     "expr2_at": 2.6,
+     "anim": null
+    },
+    {
+     "k": "counter",
+     "x": 150,
+     "y": 352,
+     "w": 290,
+     "h": 96
+    },
+    {
+     "k": "sign",
+     "x": 420,
+     "y": 96,
+     "text": "OPEN",
+     "d": 0.9
+    },
+    {
+     "k": "person",
+     "x": 14,
+     "y": 212,
+     "s": 1.12,
+     "skin": "d",
+     "shirt": "white",
+     "dress": "#f6c6cf",
+     "hair": "long",
+     "pose": "wave",
+     "anim": "wave",
+     "expr": "smile",
+     "d": 0.5,
+     "enter": "L"
+    },
+    {
+     "k": "person",
+     "x": 470,
+     "y": 212,
+     "s": 1.12,
+     "skin": "c",
+     "shirt": "lav",
+     "pose": "phone",
+     "expr": "smile",
+     "expr2": "frown",
+     "expr2_at": 3.0,
+     "flip": true,
+     "enter": "R",
+     "d": 0.8
+    },
+    {
+     "k": "bubble",
+     "x": 6,
+     "y": 146,
+     "text": "Open?",
+     "w": 120,
+     "h": 56,
+     "d": 1.3
+    },
+    {
+     "k": "bubble",
+     "x": 452,
+     "y": 146,
+     "text": "Order!",
+     "w": 120,
+     "h": 56,
+     "d": 1.8,
+     "tail": "right"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Facebook, Instagram, WhatsApp. All gone at once."
+   ],
+   "headline": "All gone|[[at once.]]",
+   "objects": [
+    {
+     "k": "phone",
+     "x": 0,
+     "y": 60,
+     "w": 170,
+     "h": 290,
+     "lines": [
+      "Facebook"
+     ],
+     "spinner": true,
+     "d": 0.4
+    },
+    {
+     "k": "phone",
+     "x": 207,
+     "y": 60,
+     "w": 170,
+     "h": 290,
+     "lines": [
+      "Instagram"
+     ],
+     "spinner": true,
+     "d": 0.8
+    },
+    {
+     "k": "phone",
+     "x": 414,
+     "y": 60,
+     "w": 170,
+     "h": 290,
+     "lines": [
+      "WhatsApp"
+     ],
+     "spinner": true,
+     "d": 1.2
+    },
+    {
+     "k": "bubble",
+     "x": 28,
+     "y": 372,
+     "text": "Down",
+     "w": 120,
+     "h": 56,
+     "d": 1.8,
+     "tail": "left"
+    },
+    {
+     "k": "bubble",
+     "x": 235,
+     "y": 372,
+     "text": "Down",
+     "w": 120,
+     "h": 56,
+     "d": 2.1
+    },
+    {
+     "k": "bubble",
+     "x": 442,
+     "y": 372,
+     "text": "Down",
+     "w": 120,
+     "h": 56,
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "type": "stat",
+   "lines": [
+    "Mark Zuckerberg lost over six billion dollars."
+   ],
+   "headline": "The boss lost|[[billions.]]",
+   "pre": "-$",
+   "suf": "B+",
+   "to": 6,
+   "sub": "Zuckerberg's wealth, same day",
+   "tone": "bad",
+   "flash": 1.5
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "But small shops lost something worse. Their customers."
+   ],
+   "headline": "Small shops lost|[[customers.]]",
+   "chip": "No orders",
+   "objects": [
+    {
+     "k": "person",
+     "x": 40,
+     "y": 204,
+     "s": 1.16,
+     "skin": "a",
+     "shirt": "cream",
+     "apron": "#d4553a",
+     "pose": "shrug",
+     "expr": "frown",
+     "anim": "shake",
+     "sweat": true,
+     "d": 0.3
+    },
+    {
+     "k": "counter",
+     "x": 10,
+     "y": 352,
+     "w": 190,
+     "h": 96
+    },
+    {
+     "k": "phone",
+     "x": 210,
+     "y": 120,
+     "w": 125,
+     "h": 200,
+     "lines": [
+      "No",
+      "signal"
+     ],
+     "spinner": true,
+     "d": 0.8
+    },
+    {
+     "k": "person",
+     "x": 330,
+     "y": 212,
+     "s": 1.12,
+     "skin": "b",
+     "shirt": "lav",
+     "dress": "#bcd8f5",
+     "hair": "long",
+     "pose": "watch",
+     "anim": "watch",
+     "expr": "worried",
+     "pace": true,
+     "flip": true,
+     "enter": "R",
+     "d": 0.9
+    },
+    {
+     "k": "person",
+     "x": 424,
+     "y": 212,
+     "s": 1.12,
+     "skin": "e",
+     "shirt": "lime",
+     "hair": "bald",
+     "pose": "cross",
+     "expr": "frown",
+     "anim": "shake",
+     "flip": true,
+     "enter": "R",
+     "d": 1.3,
+     "exit": 3.2
+    },
+    {
+     "k": "person",
+     "x": 516,
+     "y": 294,
+     "s": 0.75,
+     "skin": "a",
+     "shirt": "pink",
+     "hair": "afro",
+     "pose": "stand",
+     "expr": "open",
+     "flip": true,
+     "enter": "R",
+     "d": 1.7
+    },
+    {
+     "k": "bubble",
+     "x": 326,
+     "y": 150,
+     "text": "!!",
+     "w": 70,
+     "h": 52,
+     "d": 2.0
+    },
+    {
+     "k": "bubble",
+     "x": 404,
+     "y": 150,
+     "text": "?",
+     "w": 70,
+     "h": 52,
+     "d": 2.4
+    }
+   ],
+   "tone": "bad"
+  },
+  {
+   "type": "chats",
+   "lines": [
+    "Orders sat in chats nobody could open.",
+    "No replies. No way to say, we're still open."
+   ],
+   "headline": "Orders stuck|[[in chats.]]",
+   "rows": [
+    {
+     "name": "Thandi",
+     "msg": "Blue dress in stock?",
+     "n": 3,
+     "photo": "boutique.jpg",
+     "pos": "55% 18%"
+    },
+    {
+     "name": "Jonas",
+     "msg": "Order for tomorrow?",
+     "n": 5,
+     "photo": "vendor_apron.jpg",
+     "pos": "65% 25%"
+    },
+    {
+     "name": "Lina",
+     "msg": "Are you open today?",
+     "n": 2,
+     "photo": "bakery.jpg",
+     "pos": "45% 25%"
+    },
+    {
+     "name": "Marco",
+     "msg": "Sneaker price?",
+     "n": 4,
+     "photo": "sneakers.jpg",
+     "pos": "50% 25%"
+    },
+    {
+     "name": "Sipho",
+     "msg": "Do you deliver?",
+     "n": 1,
+     "photo": "vendor_manila.jpg",
+     "pos": "50% 25%"
+    },
+    {
+     "name": "Anna",
+     "msg": "Pic of the roses?",
+     "n": 6,
+     "photo": "florist.jpg",
+     "pos": "50% 25%"
+    }
+   ]
+  },
+  {
+   "type": "browser",
+   "lines": [
+    "If your whole business lives in one app, you don't own it. You rent it.",
+    "Own one place customers can always find you. Your website."
+   ],
+   "headline": "Don't rent.|[[Own it.]]",
+   "url": "yourshop.com",
+   "photo": "florist.jpg",
+   "pos": "55% 30%",
+   "site_title": "Fresh flowers, delivered today",
+   "cta": "Order now"
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "So, if that app went dark tomorrow, how would customers find you?",
+    "Six hours is a long time to be invisible."
+   ],
+   "headline": "How would customers|[[find you?]]",
+   "objects": [
+    {
+     "k": "awning",
+     "x": 0,
+     "y": 10,
+     "w": 584
+    },
+    {
+     "k": "person",
+     "x": 236,
+     "y": 204,
+     "s": 1.16,
+     "skin": "a",
+     "shirt": "cream",
+     "apron": "#d4553a",
+     "pose": "wave",
+     "expr": "smile",
+     "d": 0.3,
+     "enter": "pop",
+     "anim": "wave"
+    },
+    {
+     "k": "counter",
+     "x": 150,
+     "y": 352,
+     "w": 290,
+     "h": 96
+    },
+    {
+     "k": "sign",
+     "x": 420,
+     "y": 96,
+     "text": "OPEN",
+     "d": 0.8
+    },
+    {
+     "k": "person",
+     "x": 14,
+     "y": 212,
+     "s": 1.12,
+     "skin": "d",
+     "shirt": "white",
+     "dress": "#f6c6cf",
+     "hair": "long",
+     "pose": "up",
+     "anim": "cheer",
+     "expr": "smile",
+     "enter": "L",
+     "d": 0.6
+    },
+    {
+     "k": "person",
+     "x": 470,
+     "y": 212,
+     "s": 1.12,
+     "skin": "c",
+     "shirt": "blue",
+     "pose": "up",
+     "anim": "cheer",
+     "expr": "smile",
+     "flip": true,
+     "enter": "R",
+     "d": 0.9
+    },
+    {
+     "k": "person",
+     "x": 96,
+     "y": 294,
+     "s": 0.75,
+     "skin": "b",
+     "shirt": "lime",
+     "hair": "bun",
+     "pose": "wave",
+     "anim": "wave",
+     "expr": "smile",
+     "enter": "L",
+     "d": 1.2
+    },
+    {
+     "k": "float",
+     "x": 60,
+     "y": 200,
+     "text": "\u2665",
+     "d": 1.5
+    },
+    {
+     "k": "float",
+     "x": 300,
+     "y": 260,
+     "text": "\u2665",
+     "d": 2.0,
+     "size": 36
+    },
+    {
+     "k": "float",
+     "x": 510,
+     "y": 200,
+     "text": "\u2665",
+     "d": 2.5
+    },
+    {
+     "k": "float",
+     "x": 150,
+     "y": 300,
+     "text": "\u2665",
+     "d": 2.9,
+     "size": 30
+    },
+    {
+     "k": "float",
+     "x": 420,
+     "y": 300,
+     "text": "\u2665",
+     "d": 3.3,
+     "size": 34
+    }
+   ]
+  }
+ ],
+ "caption": "On 4 October 2021, Facebook, Instagram and WhatsApp all went down for about six hours. Mark Zuckerberg's wealth fell by more than $6 billion that day. For small businesses that take orders in chats, it meant sales they couldn't make and customers they couldn't answer.\n\nIf your whole business lives inside one app, you're renting it. A website is the one place customers can always find you.\n\nIf that app went dark tomorrow, how would customers find you? DM us the word OWN and we'll show you what yours could look like.\n\n#moodbod #websitedesign #whatsappbusiness #smallbusinessnamibia #windhoek\n\nSources: NPR (Oct 5 2021), Snopes, Wikipedia 2021 Facebook outage."
+}

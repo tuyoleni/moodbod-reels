@@ -1,0 +1,6 @@
+models/
+icons_pkg/
+skill/
+tmp_*/
+__pycache__/
+out/

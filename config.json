@@ -1,0 +1,9 @@
+{
+ "instagram_account": "moodbod.agency",
+ "ig_user_id": "30701905539399715",
+ "timezone": "Africa/Windhoek",
+ "post_slots_local": ["08:07", "12:07", "15:37", "20:19"],
+ "media_repo": "tuyoleni/moodbod-reels",
+ "media_branch": "main",
+ "cover_thumb_offset_ms": 2000
+}

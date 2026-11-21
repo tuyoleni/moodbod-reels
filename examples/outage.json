@@ -1,0 +1,659 @@
+{
+ "slug": "moodbod-southwest-by-hand",
+ "bg": "sky",
+ "voice": "af_heart",
+ "scenes": [
+  {
+   "type": "stage",
+   "lines": [
+    "In December twenty twenty two, Southwest Airlines cancelled sixteen thousand seven hundred flights."
+   ],
+   "headline": "Southwest cancelled|[[16,700 flights.]]",
+   "chip": "DEC 2022",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "board",
+     "x": 150,
+     "y": 104,
+     "w": 284,
+     "rows": [],
+     "title": "BAGGAGE CLAIM",
+     "d": 0.2
+    },
+    {
+     "k": "prop",
+     "name": "carousel",
+     "x": 120,
+     "y": 330,
+     "w": 344
+    },
+    {
+     "k": "prop",
+     "name": "bagpile",
+     "x": 6,
+     "y": 448,
+     "w": 170,
+     "n": 4,
+     "s": 0.72,
+     "d": 0.4
+    },
+    {
+     "k": "prop",
+     "name": "bagpile",
+     "x": 420,
+     "y": 448,
+     "w": 160,
+     "n": 4,
+     "s": 0.72,
+     "d": 0.6
+    },
+    {
+     "k": "person",
+     "x": 190,
+     "y": 212,
+     "s": 1.12,
+     "skin": "d",
+     "shirt": "white",
+     "pose": "point",
+     "expr": "worried",
+     "dress": "#f6c6cf",
+     "hair": "long",
+     "d": 0.6,
+     "enter": "L"
+    },
+    {
+     "k": "person",
+     "x": 290,
+     "y": 212,
+     "s": 1.12,
+     "skin": "c",
+     "shirt": "lav",
+     "pose": "shrug",
+     "expr": "frown",
+     "anim": "shake",
+     "d": 0.9
+    },
+    {
+     "k": "person",
+     "x": 372,
+     "y": 294,
+     "s": 0.75,
+     "skin": "b",
+     "shirt": "lime",
+     "pose": "stand",
+     "expr": "worried",
+     "hair": "bun",
+     "enter": "R",
+     "d": 1.2
+    },
+    {
+     "k": "bubble",
+     "x": 170,
+     "y": 180,
+     "text": "Mine?",
+     "w": 120,
+     "h": 56,
+     "d": 1.5
+    },
+    {
+     "k": "bubble",
+     "x": 296,
+     "y": 160,
+     "text": "Where?!",
+     "w": 140,
+     "h": 56,
+     "d": 2.1
+    }
+   ]
+  },
+  {
+   "type": "stat",
+   "lines": [
+    "The cost was estimated at up to eight hundred and twenty five million dollars."
+   ],
+   "headline": "The bill:|[[up to $825M.]]",
+   "pre": "$",
+   "suf": "M",
+   "to": 825,
+   "sub": "Estimated cost",
+   "tone": "bad",
+   "flash": 1.5,
+   "style": "receipt",
+   "rows": [
+    [
+     "Flights cancelled",
+     "16,700"
+    ],
+    [
+     "Month",
+     "Dec 2022"
+    ]
+   ],
+   "stamp": "LOSS"
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "The crew scheduling software choked on a winter storm.",
+    "Staff searched records by hand, and crews waited on hold for eight hours."
+   ],
+   "headline": "Software choked.|[[By hand.]]",
+   "chip": "8 hrs on hold",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "clock",
+     "x": 238,
+     "y": 84,
+     "w": 64,
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "note",
+     "x": 60,
+     "y": 96,
+     "w": 70,
+     "h": 56,
+     "text": "Crew?",
+     "color": "#ffe27a",
+     "rot": -6,
+     "d": 0.5
+    },
+    {
+     "k": "prop",
+     "name": "note",
+     "x": 440,
+     "y": 100,
+     "w": 80,
+     "h": 56,
+     "text": "Gate 7",
+     "color": "#ffb3a7",
+     "rot": 5,
+     "d": 0.8
+    },
+    {
+     "k": "person",
+     "x": 34,
+     "y": 212,
+     "s": 1.12,
+     "skin": "d",
+     "shirt": "white",
+     "pose": "phone",
+     "expr": "worried",
+     "dress": "#bcd8f5",
+     "hair": "long",
+     "d": 0.5,
+     "enter": "L"
+    },
+    {
+     "k": "person",
+     "x": 470,
+     "y": 212,
+     "s": 1.12,
+     "skin": "e",
+     "shirt": "lav",
+     "pose": "phone",
+     "expr": "frown",
+     "flip": true,
+     "enter": "R",
+     "d": 0.9
+    },
+    {
+     "k": "person",
+     "x": 250,
+     "y": 204,
+     "s": 1.16,
+     "skin": "a",
+     "shirt": "cream",
+     "pose": "shrug",
+     "expr": "worried",
+     "anim": "shake",
+     "sweat": true,
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 130,
+     "y": 346,
+     "w": 324,
+     "h": 70
+    },
+    {
+     "k": "prop",
+     "name": "monitor",
+     "x": 150,
+     "y": 278,
+     "w": 84,
+     "h": 60,
+     "err": true,
+     "d": 0.8
+    },
+    {
+     "k": "prop",
+     "name": "papers",
+     "x": 270,
+     "y": 334,
+     "w": 70,
+     "h": 70
+    },
+    {
+     "k": "prop",
+     "name": "papers",
+     "x": 360,
+     "y": 334,
+     "w": 60,
+     "h": 70
+    },
+    {
+     "k": "prop",
+     "name": "ringphone",
+     "x": 250,
+     "y": 292,
+     "d": 1.0
+    },
+    {
+     "k": "prop",
+     "name": "ringphone",
+     "x": 432,
+     "y": 292,
+     "d": 1.3
+    },
+    {
+     "k": "prop",
+     "name": "paper_float",
+     "x": 300,
+     "y": 260,
+     "d": 1.8,
+     "rot": 10
+    },
+    {
+     "k": "prop",
+     "name": "paper_float",
+     "x": 210,
+     "y": 250,
+     "d": 2.4,
+     "rot": -14
+    },
+    {
+     "k": "bubble",
+     "x": 10,
+     "y": 146,
+     "text": "Hold…",
+     "w": 120,
+     "h": 56,
+     "d": 1.6
+    },
+    {
+     "k": "bubble",
+     "x": 446,
+     "y": 146,
+     "text": "Hello?",
+     "w": 120,
+     "h": 56,
+     "d": 2.2,
+     "tail": "right"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Small businesses hit the same wall when orders, bookings and stock live in chats and notebooks."
+   ],
+   "headline": "Small shops hit|the [[same wall.]]",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "window",
+     "x": 30,
+     "y": 92,
+     "w": 110,
+     "h": 100
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 500,
+     "y": 392
+    },
+    {
+     "k": "prop",
+     "name": "note",
+     "x": 214,
+     "y": 96,
+     "w": 96,
+     "h": 56,
+     "text": "Orders",
+     "color": "#ffe27a",
+     "rot": -5,
+     "d": 0.5
+    },
+    {
+     "k": "prop",
+     "name": "note",
+     "x": 326,
+     "y": 92,
+     "w": 104,
+     "h": 56,
+     "text": "Bookings",
+     "color": "#b6e6a6",
+     "rot": 4,
+     "d": 0.8
+    },
+    {
+     "k": "prop",
+     "name": "note",
+     "x": 440,
+     "y": 108,
+     "w": 84,
+     "h": 56,
+     "text": "Stock",
+     "color": "#ffb3a7",
+     "rot": -3,
+     "d": 1.1
+    },
+    {
+     "k": "person",
+     "x": 236,
+     "y": 204,
+     "s": 1.16,
+     "skin": "b",
+     "shirt": "pink",
+     "pose": "shrug",
+     "expr": "worried",
+     "hair": "bun",
+     "dress": "#d9d3f0",
+     "anim": "shake",
+     "sweat": true,
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 100,
+     "y": 346,
+     "w": 400,
+     "h": 70
+    },
+    {
+     "k": "prop",
+     "name": "laptop",
+     "x": 130,
+     "y": 290,
+     "w": 110,
+     "h": 52,
+     "rows": 0
+    },
+    {
+     "k": "prop",
+     "name": "papers",
+     "x": 330,
+     "y": 334,
+     "w": 80,
+     "h": 70
+    },
+    {
+     "k": "prop",
+     "name": "mug",
+     "x": 440,
+     "y": 322
+    },
+    {
+     "k": "prop",
+     "name": "ringphone",
+     "x": 262,
+     "y": 292,
+     "d": 1.0
+    },
+    {
+     "k": "bubble",
+     "x": 24,
+     "y": 214,
+     "text": "Order?",
+     "w": 120,
+     "h": 56,
+     "d": 1.4
+    },
+    {
+     "k": "bubble",
+     "x": 424,
+     "y": 214,
+     "text": "Booking?",
+     "w": 140,
+     "h": 56,
+     "d": 1.9,
+     "tail": "right"
+    },
+    {
+     "k": "bubble",
+     "x": 250,
+     "y": 150,
+     "text": "Stock?",
+     "w": 120,
+     "h": 56,
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Automation handles the rush. People handle the exceptions."
+   ],
+   "headline": "Automate the [[rush.]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "window",
+     "x": 30,
+     "y": 92,
+     "w": 110,
+     "h": 100
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 500,
+     "y": 392
+    },
+    {
+     "k": "prop",
+     "name": "note",
+     "x": 270,
+     "y": 96,
+     "w": 96,
+     "h": 56,
+     "text": "Auto ✓",
+     "color": "#b6e6a6",
+     "rot": 3,
+     "d": 0.5
+    },
+    {
+     "k": "person",
+     "x": 236,
+     "y": 204,
+     "s": 1.16,
+     "skin": "b",
+     "shirt": "pink",
+     "pose": "cross",
+     "expr": "smile",
+     "hair": "bun",
+     "dress": "#d9d3f0",
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 100,
+     "y": 346,
+     "w": 400,
+     "h": 70
+    },
+    {
+     "k": "prop",
+     "name": "laptop",
+     "x": 130,
+     "y": 290,
+     "w": 130,
+     "h": 52,
+     "rows": 3,
+     "d": 0.6
+    },
+    {
+     "k": "prop",
+     "name": "mug",
+     "x": 440,
+     "y": 322
+    },
+    {
+     "k": "phone",
+     "x": 336,
+     "y": 258,
+     "w": 104,
+     "h": 84,
+     "lines": [
+      "Booked"
+     ],
+     "d": 1.2
+    },
+    {
+     "k": "float",
+     "x": 330,
+     "y": 250,
+     "text": "✓",
+     "d": 1.8,
+     "size": 40,
+     "color": "#1c8a4c"
+    },
+    {
+     "k": "float",
+     "x": 420,
+     "y": 250,
+     "text": "✓",
+     "d": 2.6,
+     "size": 36,
+     "color": "#1c8a4c"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "If your busiest day hit tomorrow, would your system cope?"
+   ],
+   "headline": "Your busiest|[[day?]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "clock",
+     "x": 330,
+     "y": 84,
+     "w": 64,
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 526,
+     "y": 392
+    },
+    {
+     "k": "person",
+     "x": 40,
+     "y": 212,
+     "s": 1.12,
+     "skin": "d",
+     "shirt": "white",
+     "pose": "wave",
+     "expr": "smile",
+     "dress": "#f6c6cf",
+     "hair": "long",
+     "anim": "wave",
+     "d": 0.5,
+     "enter": "L"
+    },
+    {
+     "k": "person",
+     "x": 150,
+     "y": 212,
+     "s": 1.12,
+     "skin": "c",
+     "shirt": "blue",
+     "pose": "phone",
+     "expr": "smile",
+     "d": 0.8,
+     "enter": "L"
+    },
+    {
+     "k": "person",
+     "x": 260,
+     "y": 212,
+     "s": 1.12,
+     "skin": "e",
+     "shirt": "lime",
+     "pose": "up",
+     "expr": "smile",
+     "hair": "bald",
+     "anim": "cheer",
+     "d": 1.0,
+     "enter": "L"
+    },
+    {
+     "k": "prop",
+     "name": "bench",
+     "x": 20,
+     "y": 352,
+     "w": 380,
+     "h": 26,
+     "legs": 70
+    },
+    {
+     "k": "person",
+     "x": 424,
+     "y": 204,
+     "s": 1.16,
+     "skin": "a",
+     "shirt": "cream",
+     "pose": "hold",
+     "expr": "smile",
+     "apron": "#d4553a",
+     "d": 0.4,
+     "enter": "R"
+    },
+    {
+     "k": "bubble",
+     "x": 20,
+     "y": 150,
+     "text": "Order!",
+     "w": 120,
+     "h": 56,
+     "d": 1.4
+    },
+    {
+     "k": "bubble",
+     "x": 190,
+     "y": 128,
+     "text": "Book!",
+     "w": 110,
+     "h": 56,
+     "d": 1.9
+    },
+    {
+     "k": "float",
+     "x": 470,
+     "y": 190,
+     "text": "♥",
+     "d": 2.4,
+     "size": 36
+    }
+   ]
+  }
+ ],
+ "caption": "In December 2022, Southwest Airlines cancelled about 16,700 flights. The airline estimated the cost at up to $825 million. Its crew scheduling software choked on a winter storm, and staff had to search records by hand while crews waited on hold for hours.\n\nSmall businesses hit the same wall when orders, bookings and stock live in chats and notebooks. Automation handles the rush, people handle the exceptions.\n\nIf your busiest day hit tomorrow, would your system cope? DM us the word AUTO and we'll show you what could run itself.\n\n#moodbod #businessautomation #smallbusinessnamibia #customsoftware #windhoek\n\nSources: CNN (Jan 2023), Fortune (Dec 2022), Wall Street Journal via AI Incident Database."
+}
