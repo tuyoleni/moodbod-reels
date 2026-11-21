@@ -82,7 +82,7 @@ def scene_html(sc,dur):
         body=head(sc["headline"])+f"<div style='margin-top:44px'>{rows}</div>"
     elif t=="stat" and sc.get("style") in ("receipt","bars","big"):
         stl=sc["style"]; col=RED if BAD else '#111'
-        cnt=f"<span id=cnt data-to='{sc['to']}' data-pre='{sc.get('pre','')}' data-suf='{sc.get('suf','')}'>0</span>"
+        cnt=f"<span id=cnt data-to='{sc['to']}' data-pre='{sc.get('pre','')}' data-suf='{sc.get('suf','')}' data-dec='{sc.get('dec',0)}'>0</span>"
         if stl=="receipt":
             rws="".join(f"<div style='display:flex;justify-content:space-between;font-size:30px;padding:8px 0;border-bottom:2px dashed #bbb;{A('fu',.45,.5+i*.35)}'><span>{a}</span><b>{b}</b></div>" for i,(a,b) in enumerate(sc["rows"]))
             zig="<svg width='100%' height='22' viewBox='0 0 520 22' preserveAspectRatio='none' style='display:block;margin-top:-1px'><polygon points='"+" ".join(f"{i*20},0 {i*20+10},20 {i*20+20},0" for i in range(26))+"' fill='#fff' stroke='#111' stroke-width='2'/></svg>"
@@ -218,7 +218,7 @@ if(sv){for(const a of document.querySelectorAll('svg.stage .chk')){const r=a.get
 const hs=[...document.querySelectorAll('h1')]; const sr2=svg?svg.getBoundingClientRect():(document.querySelector('.safe > div:not(h1)')||{getBoundingClientRect:()=>null}).getBoundingClientRect(); if(hs.length&&sr2){const hb=hs[hs.length-1].getBoundingClientRect(); if(hb.bottom>sr2.top+2) issues.push('headline overlaps visual by '+Math.round(hb.bottom-sr2.top)+'px');}
 return issues;}"""
 QA_ISSUES=[]
-SETCNT="""(t)=>{const c=document.getElementById('cnt'); if(!c) return; const to=parseFloat(c.dataset.to); const x=Math.max(0,Math.min(1,(t-0.5)/1.0)); const e=1-Math.pow(1-x,3); c.textContent=c.dataset.pre+Math.round(to*e)+c.dataset.suf;}"""
+SETCNT="""(t)=>{const c=document.getElementById('cnt'); if(!c) return; const to=parseFloat(c.dataset.to); const x=Math.max(0,Math.min(1,(t-0.5)/1.0)); const e=1-Math.pow(1-x,3); const dec=parseInt(c.dataset.dec||'0'); c.textContent=c.dataset.pre+(to*e).toFixed(dec)+c.dataset.suf;}"""
 def main():
     v,sr,scenes,total=tts(); print("voice total",round(total,1),"s",flush=True)
     n=asyncio.run(render(scenes,total))

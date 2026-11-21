@@ -1,0 +1,9 @@
+On 19 July 2024, one faulty software update from CrowdStrike crashed about 8.5 million Windows computers (Microsoft's estimate) and froze hospitals, banks and airlines. One insurer estimated the largest US companies lost about $5.4 billion.
+
+A small business feels the same thing on a smaller scale when one update or one tool stops on a busy day. Test changes before they go live, keep a backup and know your plan B.
+
+If one update broke your tools tomorrow, what would you do? DM us the word BACKUP and we'll help you plan it.
+
+#moodbod #itsupport #smallbusinessnamibia #customsoftware #windhoek
+
+Sources: Microsoft via Axios and TechCrunch (Jul 2024), Parametrix via Reuters (Jul 2024), IBM.

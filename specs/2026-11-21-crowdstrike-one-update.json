@@ -1,0 +1,445 @@
+{
+ "slug": "moodbod-crowdstrike-one-update",
+ "bg": "lavender",
+ "voice": "af_heart",
+ "scenes": [
+  {
+   "type": "stage",
+   "lines": [
+    "On July nineteenth, twenty twenty four, one faulty software update crashed about eight and a half million Windows computers."
+   ],
+   "headline": "One update crashed|[[8.5M computers.]]",
+   "chip": "19 JUL 2024",
+   "tone": "bad",
+   "objects": [
+    {
+     "x": 190,
+     "y": 104,
+     "w": 200,
+     "rows": [],
+     "title": "CLINIC",
+     "d": 0.2,
+     "k": "prop",
+     "name": "board"
+    },
+    {
+     "x": 40,
+     "y": 212,
+     "s": 1.12,
+     "skin": "d",
+     "shirt": "white",
+     "pose": "hold",
+     "expr": "worried",
+     "dress": "#bcd8f5",
+     "hair": "long",
+     "enter": "L",
+     "d": 0.6,
+     "k": "person"
+    },
+    {
+     "x": 470,
+     "y": 212,
+     "s": 1.12,
+     "skin": "e",
+     "shirt": "lav",
+     "pose": "phone",
+     "expr": "frown",
+     "flip": true,
+     "enter": "R",
+     "d": 0.9,
+     "k": "person"
+    },
+    {
+     "x": 262,
+     "y": 204,
+     "s": 1.16,
+     "skin": "a",
+     "shirt": "cream",
+     "pose": "shrug",
+     "expr": "worried",
+     "anim": "shake",
+     "sweat": true,
+     "d": 0.3,
+     "k": "person"
+    },
+    {
+     "x": 150,
+     "y": 346,
+     "w": 300,
+     "h": 70,
+     "k": "prop",
+     "name": "desk"
+    },
+    {
+     "x": 172,
+     "y": 278,
+     "w": 84,
+     "h": 60,
+     "err": true,
+     "d": 0.8,
+     "k": "prop",
+     "name": "monitor"
+    },
+    {
+     "x": 350,
+     "y": 334,
+     "w": 60,
+     "h": 70,
+     "k": "prop",
+     "name": "papers"
+    },
+    {
+     "x": 500,
+     "y": 392,
+     "k": "prop",
+     "name": "plant"
+    },
+    {
+     "k": "bubble",
+     "x": 24,
+     "y": 150,
+     "text": "Screen?!",
+     "w": 148,
+     "h": 56,
+     "d": 1.6
+    },
+    {
+     "k": "bubble",
+     "x": 436,
+     "y": 150,
+     "text": "Blue!",
+     "w": 120,
+     "h": 56,
+     "d": 2.2,
+     "tail": "right"
+    }
+   ]
+  },
+  {
+   "type": "stat",
+   "style": "big",
+   "lines": [
+    "The largest American companies alone lost an estimated five point four billion dollars, according to one insurer."
+   ],
+   "headline": "Fortune 500 lost|[[$5.4B.]]",
+   "pre": "$",
+   "suf": "B",
+   "to": 5.4,
+   "dec": 1,
+   "sub": "Estimated by insurer Parametrix",
+   "tone": "bad",
+   "flash": 1.5
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Hospitals, banks and airlines froze together, because they all trusted the same update."
+   ],
+   "headline": "Hospitals. Banks.|[[All frozen.]]",
+   "chip": "Same update",
+   "tone": "bad",
+   "objects": [
+    {
+     "x": 250,
+     "y": 84,
+     "w": 64,
+     "d": 0.3,
+     "k": "prop",
+     "name": "clock"
+    },
+    {
+     "x": 420,
+     "y": 96,
+     "w": 96,
+     "h": 56,
+     "text": "Card?",
+     "color": "#ffb3a7",
+     "rot": 5,
+     "d": 0.8,
+     "k": "prop",
+     "name": "note"
+    },
+    {
+     "x": 36,
+     "y": 212,
+     "s": 1.12,
+     "skin": "b",
+     "shirt": "pink",
+     "pose": "phone",
+     "expr": "worried",
+     "dress": "#d9d3f0",
+     "hair": "bun",
+     "enter": "L",
+     "d": 0.6,
+     "k": "person"
+    },
+    {
+     "x": 250,
+     "y": 204,
+     "s": 1.16,
+     "skin": "c",
+     "shirt": "blue",
+     "pose": "shrug",
+     "expr": "frown",
+     "anim": "shake",
+     "d": 0.3,
+     "k": "person"
+    },
+    {
+     "x": 470,
+     "y": 212,
+     "s": 1.12,
+     "skin": "d",
+     "shirt": "lime",
+     "pose": "watch",
+     "expr": "frown",
+     "flip": true,
+     "enter": "R",
+     "d": 0.9,
+     "k": "person"
+    },
+    {
+     "x": 140,
+     "y": 346,
+     "w": 320,
+     "h": 70,
+     "k": "prop",
+     "name": "desk"
+    },
+    {
+     "x": 160,
+     "y": 278,
+     "w": 84,
+     "h": 60,
+     "err": true,
+     "d": 0.8,
+     "k": "prop",
+     "name": "monitor"
+    },
+    {
+     "x": 350,
+     "y": 278,
+     "w": 84,
+     "h": 60,
+     "err": true,
+     "d": 1.0,
+     "k": "prop",
+     "name": "monitor"
+    },
+    {
+     "k": "bubble",
+     "x": 34,
+     "y": 150,
+     "text": "Down…",
+     "w": 124,
+     "h": 56,
+     "d": 1.6
+    },
+    {
+     "k": "bubble",
+     "x": 436,
+     "y": 150,
+     "text": "Wait?",
+     "w": 120,
+     "h": 56,
+     "d": 2.2,
+     "tail": "right"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "A small business feels it too, when one update stops your tools on a busy day."
+   ],
+   "headline": "One update.|[[Your busy day.]]",
+   "tone": "bad",
+   "objects": [
+    {
+     "x": 30,
+     "y": 92,
+     "w": 110,
+     "h": 100,
+     "k": "prop",
+     "name": "window"
+    },
+    {
+     "x": 270,
+     "y": 96,
+     "w": 96,
+     "h": 56,
+     "text": "Orders",
+     "color": "#ffe27a",
+     "rot": -4,
+     "d": 0.5,
+     "k": "prop",
+     "name": "note"
+    },
+    {
+     "x": 400,
+     "y": 104,
+     "w": 96,
+     "h": 56,
+     "text": "Invoices",
+     "color": "#ffb3a7",
+     "rot": 5,
+     "d": 0.8,
+     "k": "prop",
+     "name": "note"
+    },
+    {
+     "x": 236,
+     "y": 204,
+     "s": 1.16,
+     "skin": "e",
+     "shirt": "lav",
+     "pose": "shrug",
+     "expr": "worried",
+     "anim": "shake",
+     "sweat": true,
+     "d": 0.3,
+     "k": "person"
+    },
+    {
+     "x": 100,
+     "y": 346,
+     "w": 400,
+     "h": 70,
+     "k": "prop",
+     "name": "desk"
+    },
+    {
+     "x": 130,
+     "y": 278,
+     "w": 84,
+     "h": 60,
+     "err": true,
+     "d": 0.8,
+     "k": "prop",
+     "name": "monitor"
+    },
+    {
+     "x": 440,
+     "y": 322,
+     "k": "prop",
+     "name": "mug"
+    },
+    {
+     "x": 520,
+     "y": 392,
+     "k": "prop",
+     "name": "plant"
+    },
+    {
+     "k": "bubble",
+     "x": 40,
+     "y": 216,
+     "text": "Plan B?",
+     "w": 130,
+     "h": 56,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Test updates on one machine first, keep a backup, and always have a plan B."
+   ],
+   "headline": "Test first.|[[Have a plan B.]]",
+   "objects": [
+    {
+     "x": 30,
+     "y": 92,
+     "w": 110,
+     "h": 100,
+     "k": "prop",
+     "name": "window"
+    },
+    {
+     "x": 270,
+     "y": 96,
+     "w": 130,
+     "h": 56,
+     "text": "Tested first ✓",
+     "color": "#b6e6a6",
+     "rot": 3,
+     "d": 0.5,
+     "k": "prop",
+     "name": "note"
+    },
+    {
+     "x": 420,
+     "y": 104,
+     "w": 100,
+     "h": 56,
+     "text": "Backup ✓",
+     "color": "#b6e6a6",
+     "rot": -4,
+     "d": 0.9,
+     "k": "prop",
+     "name": "note"
+    },
+    {
+     "x": 236,
+     "y": 204,
+     "s": 1.16,
+     "skin": "a",
+     "shirt": "cream",
+     "pose": "cross",
+     "expr": "smile",
+     "d": 0.3,
+     "k": "person"
+    },
+    {
+     "x": 100,
+     "y": 346,
+     "w": 400,
+     "h": 70,
+     "k": "prop",
+     "name": "desk"
+    },
+    {
+     "x": 130,
+     "y": 290,
+     "w": 130,
+     "h": 52,
+     "rows": 3,
+     "d": 0.6,
+     "k": "prop",
+     "name": "laptop"
+    },
+    {
+     "x": 440,
+     "y": 322,
+     "k": "prop",
+     "name": "mug"
+    },
+    {
+     "x": 520,
+     "y": 392,
+     "k": "prop",
+     "name": "plant"
+    },
+    {
+     "k": "float",
+     "x": 330,
+     "y": 250,
+     "text": "✓",
+     "d": 1.8,
+     "size": 40,
+     "color": "#1c8a4c"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "lines": [
+    "If one update broke your tools tomorrow, what would you do?"
+   ],
+   "headline": "What's your|[[plan B?]]",
+   "q": "If one update broke your tools tomorrow, what would you do?"
+  }
+ ],
+ "caption": "On 19 July 2024, one faulty software update from CrowdStrike crashed about 8.5 million Windows computers (Microsoft's estimate) and froze hospitals, banks and airlines. One insurer estimated the largest US companies lost about $5.4 billion.\n\nA small business feels the same thing on a smaller scale when one update or one tool stops on a busy day. Test changes before they go live, keep a backup and know your plan B.\n\nIf one update broke your tools tomorrow, what would you do? DM us the word BACKUP and we'll help you plan it.\n\n#moodbod #itsupport #smallbusinessnamibia #customsoftware #windhoek\n\nSources: Microsoft via Axios and TechCrunch (Jul 2024), Parametrix via Reuters (Jul 2024), IBM."
+}
