@@ -1,0 +1,351 @@
+{
+ "slug": "moodbod-healthcare-gov-six",
+ "bg": "lime",
+ "voice": "af_bella",
+ "scenes": [
+  {
+   "type": "stage",
+   "lines": [
+    "On October first, twenty thirteen, the American government launched a website. On day one, only six people managed to sign up."
+   ],
+   "headline": "Launch day.|[[Six sign-ups.]]",
+   "chip": "1 OCT 2013",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "clock",
+     "x": 250,
+     "y": 84,
+     "w": 64,
+     "d": 0.3
+    },
+    {
+     "k": "person",
+     "x": 250,
+     "y": 204,
+     "s": 1.16,
+     "skin": "c",
+     "shirt": "blue",
+     "pose": "shrug",
+     "expr": "worried",
+     "anim": "shake",
+     "sweat": true,
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 130,
+     "y": 346,
+     "w": 340,
+     "h": 70
+    },
+    {
+     "k": "prop",
+     "name": "laptop",
+     "x": 170,
+     "y": 290,
+     "w": 130,
+     "h": 52,
+     "rows": 0,
+     "d": 0.5
+    },
+    {
+     "k": "prop",
+     "name": "mug",
+     "x": 400,
+     "y": 322
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 520,
+     "y": 392
+    },
+    {
+     "k": "bubble",
+     "x": 40,
+     "y": 150,
+     "text": "Loading…",
+     "w": 170,
+     "h": 56,
+     "d": 1.4
+    },
+    {
+     "k": "bubble",
+     "x": 400,
+     "y": 150,
+     "text": "Again?",
+     "w": 140,
+     "h": 56,
+     "d": 2.2,
+     "tail": "right"
+    }
+   ]
+  },
+  {
+   "type": "stat",
+   "style": "bars",
+   "lines": [
+    "Testing documents later showed it could only handle about eleven hundred users at once, on the eve of launch."
+   ],
+   "headline": "Tested for|[[1,100 users.]]",
+   "pre": "",
+   "suf": "",
+   "to": 6,
+   "dec": 0,
+   "sub": "sign-ups on launch day",
+   "tone": "bad",
+   "flash": 1.5,
+   "bars": [
+    [
+     "Users it was tested for",
+     100,
+     "#ffffff"
+    ],
+    [
+     "Sign-ups on day one",
+     2,
+     "#FF9B93"
+    ]
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "People rushed to check plans. They got error screens, spinning wheels and long waits."
+   ],
+   "headline": "Crowds came.|[[Screens froze.]]",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "board",
+     "x": 190,
+     "y": 104,
+     "w": 230,
+     "rows": [],
+     "title": "SITE ERROR"
+    },
+    {
+     "k": "person",
+     "x": 40,
+     "y": 212,
+     "s": 1.12,
+     "skin": "d",
+     "shirt": "pink",
+     "pose": "phone",
+     "expr": "worried",
+     "dress": "#d9d3f0",
+     "hair": "bun",
+     "enter": "L",
+     "d": 0.6
+    },
+    {
+     "k": "person",
+     "x": 470,
+     "y": 212,
+     "s": 1.12,
+     "skin": "a",
+     "shirt": "cream",
+     "pose": "watch",
+     "expr": "frown",
+     "flip": true,
+     "enter": "R",
+     "d": 0.9
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 150,
+     "y": 346,
+     "w": 300,
+     "h": 70
+    },
+    {
+     "k": "prop",
+     "name": "monitor",
+     "x": 180,
+     "y": 278,
+     "w": 84,
+     "h": 60,
+     "err": true,
+     "d": 0.8
+    },
+    {
+     "k": "prop",
+     "name": "monitor",
+     "x": 320,
+     "y": 278,
+     "w": 84,
+     "h": 60,
+     "err": true,
+     "d": 1.0
+    },
+    {
+     "k": "prop",
+     "name": "ringphone",
+     "x": 500,
+     "y": 330,
+     "d": 1.2
+    },
+    {
+     "k": "bubble",
+     "x": 34,
+     "y": 150,
+     "text": "Try later",
+     "w": 170,
+     "h": 56,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Your customers do the same. If your site or ordering is slow, they don't wait, they leave."
+   ],
+   "headline": "Slow site?|[[They leave.]]",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "bench",
+     "x": 60,
+     "y": 330,
+     "w": 420,
+     "h": 18,
+     "legs": 60
+    },
+    {
+     "k": "person",
+     "x": 110,
+     "y": 196,
+     "s": 1.16,
+     "skin": "b",
+     "shirt": "lime",
+     "pose": "phone",
+     "expr": "frown",
+     "d": 0.3
+    },
+    {
+     "k": "person",
+     "x": 330,
+     "y": 196,
+     "s": 1.16,
+     "skin": "e",
+     "shirt": "lav",
+     "pose": "shrug",
+     "expr": "worried",
+     "d": 0.6
+    },
+    {
+     "k": "prop",
+     "name": "paper_float",
+     "x": 470,
+     "y": 250,
+     "d": 1.2
+    },
+    {
+     "k": "bubble",
+     "x": 60,
+     "y": 140,
+     "text": "Too slow",
+     "w": 170,
+     "h": 56,
+     "d": 1.5
+    },
+    {
+     "k": "bubble",
+     "x": 330,
+     "y": 140,
+     "text": "Bye",
+     "w": 110,
+     "h": 56,
+     "d": 2.1,
+     "tail": "right"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Test it with a crowd before you launch, and keep it simple enough to work on a bad day."
+   ],
+   "headline": "Test the crowd.|[[Keep it simple.]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "window",
+     "x": 30,
+     "y": 92,
+     "w": 110,
+     "h": 100
+    },
+    {
+     "k": "prop",
+     "name": "note",
+     "x": 270,
+     "y": 96,
+     "w": 140,
+     "h": 56,
+     "text": "Crowd test ✓",
+     "color": "#b6e6a6",
+     "rot": 3,
+     "d": 0.5
+    },
+    {
+     "k": "person",
+     "x": 236,
+     "y": 204,
+     "s": 1.16,
+     "skin": "a",
+     "shirt": "cream",
+     "pose": "cross",
+     "expr": "smile",
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 100,
+     "y": 346,
+     "w": 400,
+     "h": 70
+    },
+    {
+     "k": "prop",
+     "name": "laptop",
+     "x": 130,
+     "y": 290,
+     "w": 130,
+     "h": 52,
+     "rows": 3,
+     "d": 0.6
+    },
+    {
+     "k": "prop",
+     "name": "mug",
+     "x": 440,
+     "y": 322
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 520,
+     "y": 392
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "lines": [
+    "If a hundred customers hit your website at once, what would happen?"
+   ],
+   "headline": "What would|[[happen?]]",
+   "q": "If a hundred customers hit your website at once, what would happen?"
+  }
+ ],
+ "caption": "On launch day in 2013, the US government's Healthcare.gov let only six people sign up. Testing documents later showed the site could handle about 1,100 users at once, just before launch.\n\nCustomers don't wait for a slow site. They leave. Test with a real crowd before you go live and keep the first version simple.\n\nIf a hundred customers hit your website at once, what would happen? DM us the word CROWD and we'll check it for you.\n\n#moodbod #websitedesign #smallbusinessnamibia #windhoek #namibia\n\nSources: NBC News, ABC News and NPR (2013) on the six sign-ups; TechCrunch and the US House Oversight Committee (Nov 2013) on the 1,100-user test."
+}

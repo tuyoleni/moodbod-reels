@@ -1,0 +1,9 @@
+On launch day in 2013, the US government's Healthcare.gov let only six people sign up. Testing documents later showed the site could handle about 1,100 users at once, just before launch.
+
+Customers don't wait for a slow site. They leave. Test with a real crowd before you go live and keep the first version simple.
+
+If a hundred customers hit your website at once, what would happen? DM us the word CROWD and we'll check it for you.
+
+#moodbod #websitedesign #smallbusinessnamibia #windhoek #namibia
+
+Sources: NBC News, ABC News and NPR (2013) on the six sign-ups; TechCrunch and the US House Oversight Committee (Nov 2013) on the 1,100-user test.
