@@ -17,7 +17,7 @@ You run unattended in the cloud, from a checkout of this repo (tuyoleni/moodbod-
 - Bad outcome = `tone:"bad"` (red/pink); never green on a loss.
 - Number scenes vary: stat `style` can be card (default), receipt, bars, big. Do not use the same style in consecutive reels.
 - One pastel background per reel, different from the previous reel (lime, lavender, sky, peach, offwhite, dark).
-- Safe column: x 43-600 and y 167-1000 at the 720x1280 design scale; nothing near the right-side Instagram buttons; nothing in top 250px / bottom 420px of the final frame. Speech bubbles must not overlap props or signs.
+- Safe column: x 88-575 and y 167-1000 at the 720x1280 design scale (Instagram crops ~9% off each side on tall phones and the right-side buttons sit at x>590, so keep a generous LEFT margin and never let text or art touch the edges; make_reel.py QA enforces it); nothing in top 250px / bottom 420px of the final frame. Speech bubbles must not overlap props or signs.
 - Voice af_heart or af_bella, never sped up. No whoosh SFX; other SFX/VFX fine. Real photos only in UI scenes (photos/), never real public figures.
 - `python3 make_reel.py specs/<file>.json --stills` until `QA: OK`, then LOOK at a contact sheet of all stills and fix anything flat, cramped, overlapping or empty. Render in background with nohup (~4 min) and poll. ffprobe: 1080x1920, audio present, 30-45s; view frames at several timestamps incl. the first second.
 - Caption: line 1 adds a hook; body; final line question + "DM us the word X"; max 5 lowercase hashtags; Sources line.
