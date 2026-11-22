@@ -1,0 +1,281 @@
+{
+ "slug": "moodbod-eras-tour-3-5-billion",
+ "bg": "sky",
+ "voice": "af_heart",
+ "scenes": [
+  {
+   "type": "stage",
+   "lines": [
+    "In twenty twenty-two, Taylor Swift tickets went on sale, and millions of fans logged on at the same moment."
+   ],
+   "headline": "Eras Tour|[[tickets went live.]]",
+   "chip": "15 NOV 2022",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "sofa",
+     "x": 120,
+     "y": 300,
+     "w": 330,
+     "h": 90
+    },
+    {
+     "k": "person",
+     "x": 170,
+     "y": 196,
+     "s": 1.14,
+     "skin": "d",
+     "shirt": "pink",
+     "pose": "phone",
+     "expr": "smile",
+     "hair": "bun",
+     "d": 0.3
+    },
+    {
+     "k": "person",
+     "x": 320,
+     "y": 196,
+     "s": 1.14,
+     "skin": "b",
+     "shirt": "lav",
+     "pose": "phone",
+     "expr": "worried",
+     "d": 0.5
+    },
+    {
+     "k": "prop",
+     "name": "ticket",
+     "x": 380,
+     "y": 120,
+     "w": 130,
+     "h": 60,
+     "text": "ERAS",
+     "d": 0.9
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 520,
+     "y": 392
+    },
+    {
+     "k": "bubble",
+     "x": 60,
+     "y": 130,
+     "text": "Refresh!",
+     "w": 160,
+     "h": 56,
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "type": "stat",
+   "style": "card",
+   "lines": [
+    "Ticketmaster said the site took three and a half billion system requests, four times its previous peak."
+   ],
+   "headline": "3.5 billion|[[requests.]]",
+   "pre": "",
+   "suf": "",
+   "to": 3.5,
+   "dec": 1,
+   "sub": "billion system requests, 4x its previous peak",
+   "tone": "bad",
+   "flash": 1.5,
+   "up": true
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Fans met waiting rooms and error screens. Ticketmaster said about fifteen percent of interactions had issues, and the public sale was cancelled."
+   ],
+   "headline": "Queues.|[[Errors.]] Cancelled.",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "board",
+     "x": 170,
+     "y": 100,
+     "w": 250,
+     "rows": [],
+     "title": "WAITING ROOM"
+    },
+    {
+     "k": "prop",
+     "name": "rope",
+     "x": 60,
+     "y": 330,
+     "w": 460,
+     "h": 60,
+     "n": 4
+    },
+    {
+     "k": "person",
+     "x": 90,
+     "y": 206,
+     "s": 1.1,
+     "skin": "c",
+     "shirt": "blue",
+     "pose": "phone",
+     "expr": "worried",
+     "enter": "L",
+     "d": 0.5
+    },
+    {
+     "k": "person",
+     "x": 250,
+     "y": 206,
+     "s": 1.1,
+     "skin": "a",
+     "shirt": "cream",
+     "pose": "watch",
+     "expr": "frown",
+     "d": 0.8
+    },
+    {
+     "k": "person",
+     "x": 410,
+     "y": 206,
+     "s": 0.8,
+     "skin": "e",
+     "shirt": "lime",
+     "pose": "shrug",
+     "expr": "worried",
+     "enter": "R",
+     "d": 1.1
+    },
+    {
+     "k": "bubble",
+     "x": 40,
+     "y": 150,
+     "text": "Stuck\u2026",
+     "w": 150,
+     "h": 56,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Over two million tickets still sold that day, a record. The demand was real. The site just wasn't built for the crowd."
+   ],
+   "headline": "Demand was real.|[[The site wasn't ready.]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "ticket",
+     "x": 90,
+     "y": 110,
+     "w": 150,
+     "h": 66,
+     "text": "SOLD",
+     "rot": -6,
+     "d": 0.4
+    },
+    {
+     "k": "prop",
+     "name": "ticket",
+     "x": 300,
+     "y": 150,
+     "w": 150,
+     "h": 66,
+     "text": "SOLD",
+     "rot": 5,
+     "d": 0.7
+    },
+    {
+     "k": "prop",
+     "name": "ticket",
+     "x": 170,
+     "y": 230,
+     "w": 150,
+     "h": 66,
+     "text": "SOLD",
+     "rot": -3,
+     "d": 1.0
+    },
+    {
+     "k": "prop",
+     "name": "monitor",
+     "x": 420,
+     "y": 260,
+     "w": 100,
+     "h": 70,
+     "err": true,
+     "d": 1.2
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 80,
+     "y": 392
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Your rush is smaller, but it's the same test. When a sale or a rush of orders hits, your website has to hold."
+   ],
+   "headline": "Your sale day|[[is the same test.]]",
+   "objects": [
+    {
+     "k": "awning",
+     "x": 70,
+     "y": 90,
+     "w": 440
+    },
+    {
+     "k": "sign",
+     "x": 300,
+     "y": 170,
+     "text": "SALE",
+     "color": "#d3382c",
+     "d": 0.5
+    },
+    {
+     "k": "person",
+     "x": 150,
+     "y": 214,
+     "s": 1.16,
+     "skin": "b",
+     "shirt": "lime",
+     "pose": "phone",
+     "expr": "smile",
+     "apron": "#fff",
+     "d": 0.3
+    },
+    {
+     "k": "counter",
+     "x": 90,
+     "y": 340,
+     "w": 400,
+     "h": 90
+    },
+    {
+     "k": "phone",
+     "x": 500,
+     "y": 240,
+     "w": 56,
+     "h": 62,
+     "lines": [
+      "+12"
+     ],
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "lines": [
+    "If your biggest sale went live today, would your website hold?"
+   ],
+   "headline": "Would it|[[hold?]]",
+   "q": "If your biggest sale went live today, would your website hold?"
+  }
+ ],
+ "caption": "3.5 billion requests hit one ticket site in a day.\n\nOn 15 Nov 2022, Eras Tour tickets went on sale. Ticketmaster said its system took 3.5 billion requests, four times its previous peak, and over 2 million tickets sold that day. It also said about 15% of interactions had issues, and the public sale was cancelled.\n\nThe demand was real. The site wasn't built for the crowd. If you run a shop or service in Namibia, a big sale or a rush of WhatsApp and online orders is the same test.\n\nIf your biggest sale went live today, would your website hold? DM us the word RUSH and we'll check it for you.\n\n#moodbod #websitedesign #smallbusinessnamibia #windhoek #namibia\n\nSources: Ticketmaster, \"The Eras Tour onsale explained\" (19 Nov 2022); NBC News on the 3.5 billion requests and the cancelled public sale."
+}

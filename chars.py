@@ -179,3 +179,29 @@ def prop(o):
              +_bag(x+w*0.2,y-30,0.5,"#e8b93d")+_bag(x+w*0.55,y-30,0.5,"#4f7fd6"))
         return f"<g class='chk'>{out}</g>"
     return _old_prop(o)
+
+# ---- props added for the Eras Tour reel ----
+_prev_prop2=prop
+def prop(o):
+    k=o.get("name"); x=o.get("x",0); y=o.get("y",0); d=o.get("d",0.3); w=o.get("w",100); h=o.get("h",100)
+    pop=f"animation:pop .5s ease {d}s both;transform-box:fill-box;transform-origin:center"
+    if k=="sofa":
+        c=o.get("color","#8b6fd6")
+        return (f"<g class='chk'><rect x='{x}' y='{y}' width='{w}' height='{h}' rx='18' fill='{c}' stroke='{INK}' stroke-width='3'/>"
+                f"<rect x='{x-14}' y='{y+h*0.35}' width='26' height='{h*0.65}' rx='12' fill='{c}' stroke='{INK}' stroke-width='3'/>"
+                f"<rect x='{x+w-12}' y='{y+h*0.35}' width='26' height='{h*0.65}' rx='12' fill='{c}' stroke='{INK}' stroke-width='3'/>"
+                f"<rect x='{x+10}' y='{y+h*0.5}' width='{w-20}' height='{h*0.5}' rx='10' fill='{c}' fill-opacity='.7' stroke='{INK}' stroke-width='3'/>"
+                f"<rect x='{x+16}' y='{y+h}' width='10' height='14' fill='{INK}'/><rect x='{x+w-26}' y='{y+h}' width='10' height='14' fill='{INK}'/></g>")
+    if k=="ticket":
+        return (f"<g class='chk' style='{pop}'><g transform='rotate({o.get('rot',-8)} {x+w/2} {y+h/2})'><rect x='{x}' y='{y}' width='{w}' height='{h}' rx='8' fill='#ffe27a' stroke='{INK}' stroke-width='3'/>"
+                f"<circle cx='{x}' cy='{y+h/2}' r='9' fill='{o.get('bg','#cfe9ff')}' stroke='{INK}' stroke-width='3'/><circle cx='{x+w}' cy='{y+h/2}' r='9' fill='{o.get('bg','#cfe9ff')}' stroke='{INK}' stroke-width='3'/>"
+                f"<path d='M{x+w*0.68} {y+8} V{y+h-8}' stroke='{INK}' stroke-width='2.5' stroke-dasharray='5 5'/>"
+                +_t(x+w*0.34,y+h/2+8,o.get('size',22),INK,o.get('text','ADMIT ONE'),800)+"</g></g>")
+    if k=="rope":   # queue stanchions with rope
+        n=o.get("n",3); gap=w/(n-1) if n>1 else w; out=""
+        for i in range(n):
+            px=x+i*gap
+            out+=f"<rect x='{px-4}' y='{y}' width='8' height='{h}' fill='{INK}'/><circle cx='{px}' cy='{y}' r='9' fill='#e8b93d' stroke='{INK}' stroke-width='3'/><rect x='{px-14}' y='{y+h}' width='28' height='7' rx='3' fill='{INK}'/>"
+        out+=f"<path d='M{x} {y+6} Q{x+w/2} {y+34} {x+w} {y+6}' fill='none' stroke='#d3382c' stroke-width='6'/>"
+        return f"<g class='chk'>{out}</g>"
+    return _prev_prop2(o)
