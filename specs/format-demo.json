@@ -1,0 +1,126 @@
+{
+ "slug": "format-demo",
+ "bg": "sky",
+ "voice": "af_heart",
+ "scenes": [
+  {
+   "type": "kinetic",
+   "lines": [
+    "Day one. Fifty times the traffic."
+   ],
+   "big": [
+    "Day one.",
+    "[[50x]]",
+    "the traffic."
+   ],
+   "sub": "What the team planned for",
+   "headline": "x"
+  },
+  {
+   "type": "news",
+   "lines": [
+    "Servers fell over."
+   ],
+   "paper": {
+    "name": "THE DAILY",
+    "date": "Thu 7 Jul 2016",
+    "head": "Servers buckle on launch day",
+    "icon": "server-off"
+   },
+   "sub": "Headlines everywhere",
+   "headline": "x",
+   "tone": "bad"
+  },
+  {
+   "type": "timeline",
+   "lines": [
+    "a"
+   ],
+   "headline": "How it unfolded|[[fast.]]",
+   "events": [
+    [
+     "6 JUL",
+     "Launch"
+    ],
+    [
+     "7 JUL",
+     "Servers buckle"
+    ],
+    [
+     "8 JUL",
+     "Rollout paused"
+    ]
+   ],
+   "tone": "bad"
+  },
+  {
+   "type": "versus",
+   "lines": [
+    "b"
+   ],
+   "headline": "Plan vs [[reality.]]",
+   "left": {
+    "title": "Plan",
+    "icon": "smile",
+    "items": [
+     "Steady growth",
+     "Calm team"
+    ]
+   },
+   "right": {
+    "title": "Reality",
+    "icon": "server-off",
+    "items": [
+     "50x traffic",
+     "Crashes"
+    ]
+   },
+   "tone": "bad"
+  },
+  {
+   "type": "thread",
+   "lines": [
+    "c"
+   ],
+   "headline": "Meanwhile in the [[chat.]]",
+   "contact": "Dev team",
+   "msgs": [
+    {
+     "from": "them",
+     "text": "Is it down?"
+    },
+    {
+     "from": "me",
+     "text": "Everything is down"
+    },
+    {
+     "from": "them",
+     "text": "Scale it!"
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "lines": [
+    "d"
+   ],
+   "headline": "Do this [[first.]]",
+   "items": [
+    "Load test",
+    "Auto-scale",
+    "Plan B"
+   ]
+  },
+  {
+   "type": "object",
+   "lines": [
+    "e"
+   ],
+   "headline": "One [[server.]]",
+   "icon": "server-off",
+   "label": "Not enough",
+   "tone": "bad"
+  }
+ ],
+ "caption": "x"
+}

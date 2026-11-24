@@ -11,6 +11,18 @@ You run unattended in the cloud, from a checkout of this repo (tuyoleni/moodbod-
 - Structure: true event first -> what happened (numbers) -> what it means for the viewer's business -> one question. CTA is a DM keyword in the caption only.
 - Hook: 3 formulas, score with skill/skills/ig-reel/hookscore.py, pick best; beats.py for timing (32-42s, hook < 3s, no beat > 4s).
 
+## 2b. FORMAT ROTATION (hard rule: reels must NOT look like each other)
+Nine reels in a row used the same template (character scene, number card, character scene, character scene, question). That is banned. Every reel has a top-level `"format"` in its spec, recorded in log.md, and the midnight analysis compares formats.
+Formats and the scene types each is built from (see make_reel.py; new scene types: kinetic, timeline, versus, thread, news, list, object, plus stat styles card/receipt/bars/big):
+- `kinetic-type`: kinetic + stat + kinetic + versus/question. No characters at all.
+- `newsroom`: news + timeline + versus + list.
+- `phone-thread`: thread (real phone chat reenacting the event) + stat + versus + object.
+- `icon-explainer`: object + list + stat + versus.
+- `timeline-story`: timeline + news + object + kinetic.
+- `character-scene`: stage scenes with flat characters (the old template). Use at most 1 reel in 4 and never twice in a row.
+Rules: (1) pick the format by reading the last 4 `format` values in log.md and choosing one NOT in them (character-scene only if absent from the last 3); (2) a reel must use at least 4 different scene types and its scene order must differ from the previous reel's; (3) no more than 2 `stage` scenes per reel, and none outside the character-scene format; (4) vary the background colour, headline length and stat style from the previous reel; (5) invent a new scene variant or prop when none fits, rather than reusing a layout; (6) every 5th reel try something new on purpose (a new scene type in make_reel.py, or a new visual idea) and tag it `format: experiment-<name>` so the analysis can measure it.
+The visuals must come from the story: icons (Lucide), a real-looking phone thread, a newspaper front page, a timeline of the actual dates, a before/after.
+
 ## 3. Design rules (learned the hard way)
 - EVERY scene gets its own environment that belongs to the story. Research what the real place/situation looks like (WebSearch for references: reporting, photos described in captions) before drawing. The shop counter was only an art style; never reuse one setting across reels or scenes. Use the `prop` library in chars.py (board, carousel, bagpile, suitcase, window, desk, monitor, laptop, papers, clock, ringphone, note, bench, plant, mug, paper_float, ...) and add new props to chars.py when the story needs them.
 - No background panel/wall/ground line behind scenes. Characters at realistic relative sizes (adults 1.12-1.16, kids ~0.75). Real phone/browser form factors. Icons from Lucide via icons.py, not hand-made.
@@ -29,6 +41,6 @@ Steps:
 - URL: https://raw.githubusercontent.com/tuyoleni/moodbod-reels/main/reels/<file>.mp4 (no query string). `curl -sI` must return 200 (retry a few times, up to 60s).
 - COMPOSIO_SEARCH_TOOLS (instagram) then INSTAGRAM_POST_IG_USER_MEDIA {ig_user_id, video_url, media_type:"REELS", caption, share_to_feed:true, thumb_offset: 2000} (the cover must show the headline, not a blank frame).
 - INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH {ig_user_id, creation_id, max_wait_seconds:300}; on 9007/500 wait 20s and retry same creation_id up to 3 times.
-- INSTAGRAM_GET_IG_MEDIA for the permalink. Append to log.md: date | time | slug | event | colour | hook | DM word | permalink | media_id. Commit and push log.md.
+- INSTAGRAM_GET_IG_MEDIA for the permalink. Append to log.md: date | time | slug | event | colour | hook | DM word | permalink | media_id | format. Commit and push log.md.
 On failure after retries: keep draft, log "FAILED: reason", never create a second post.
 Final message: 3 lines (event, hook, permalink or why not posted).
