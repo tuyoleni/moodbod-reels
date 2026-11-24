@@ -7,3 +7,4 @@
 2026-11-22 | 08:17 | eras-tour-3-5-billion | Ticketmaster Eras Tour presale 15 Nov 2022 | sky | 3.5 billion requests hit one ticket site | RUSH | https://www.instagram.com/reel/DgCJFunE7WF/ | 17931421707429157
 2026-11-24 | 08:16 | prime-day-90-million | Amazon Prime Day outage 16 Jul 2018 | peach | An estimated $90 million gone in 75 minutes | HOUR | https://www.instagram.com/reel/DgHSgO0lJV6/ | 18118767473028317
 2026-11-24 | 11:27 | blockbuster-50-million | Netflix pitch to Blockbuster 2000 | lavender | Blockbuster laughed at a $50 million offer | ORDER | https://www.instagram.com/reel/DgHobywAn8G/ | 18110335028322091
+2026-11-24 | 11:35 | fyre-sandwich | Fyre Festival Bahamas Apr 2017 | sky | They paid up to $12,780 for paradise. They got a cheese sandwich. | PROMISE | https://www.instagram.com/reel/DgHpVhoAg69/ | 18234005290336022
