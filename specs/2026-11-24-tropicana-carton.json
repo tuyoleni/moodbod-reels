@@ -1,0 +1,267 @@
+{
+ "slug": "2026-11-24-tropicana-carton",
+ "bg": "lime",
+ "voice": "af_bella",
+ "scenes": [
+  {
+   "type": "stage",
+   "lines": [
+    "A new carton cost Tropicana thirty million dollars in two months."
+   ],
+   "headline": "One new carton.|[[$30 million gone.]]",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "fridge",
+     "x": 200,
+     "y": 60,
+     "w": 300,
+     "h": 250,
+     "n": 4,
+     "v": "new",
+     "d": 0.2
+    },
+    {
+     "k": "person",
+     "x": 100,
+     "y": 230,
+     "s": 1.14,
+     "skin": "b",
+     "shirt": "pink",
+     "pose": "shrug",
+     "expr": "frown",
+     "hair": "bun",
+     "d": 0.6
+    },
+    {
+     "k": "bubble",
+     "x": 60,
+     "y": 100,
+     "text": "Hmm?",
+     "w": 110,
+     "h": 56,
+     "d": 1.3,
+     "tail": "left"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "In January two thousand nine, Tropicana, owned by PepsiCo, redesigned its orange juice carton."
+   ],
+   "headline": "January 2009:|[[the carton changes.]]",
+   "chip": "PEPSICO",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "carton",
+     "x": 90,
+     "y": 120,
+     "w": 150,
+     "h": 260,
+     "v": "old",
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "carton",
+     "x": 330,
+     "y": 120,
+     "w": 150,
+     "h": 260,
+     "v": "new",
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Out went the orange with a straw. In came a white carton with a glass of juice."
+   ],
+   "headline": "No orange.|[[No straw.]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "carton",
+     "x": 100,
+     "y": 100,
+     "w": 150,
+     "h": 260,
+     "v": "old",
+     "d": 0.3
+    },
+    {
+     "k": "float",
+     "x": 280,
+     "y": 200,
+     "text": "\u2192",
+     "size": 60,
+     "color": "#111",
+     "d": 0.8
+    },
+    {
+     "k": "prop",
+     "name": "carton",
+     "x": 340,
+     "y": 100,
+     "w": 150,
+     "h": 260,
+     "v": "new",
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Shoppers stood at the fridge, unsure if it was still their juice."
+   ],
+   "headline": "Shoppers froze at the fridge.",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "fridge",
+     "x": 40,
+     "y": 60,
+     "w": 300,
+     "h": 250,
+     "n": 3,
+     "v": "new",
+     "d": 0.2
+    },
+    {
+     "k": "person",
+     "x": 440,
+     "y": 220,
+     "s": 1.14,
+     "skin": "a",
+     "shirt": "lav",
+     "pose": "shrug",
+     "expr": "frown",
+     "d": 0.6
+    },
+    {
+     "k": "bubble",
+     "x": 360,
+     "y": 90,
+     "text": "Is this it?",
+     "w": 170,
+     "h": 56,
+     "d": 1.4,
+     "tail": "left"
+    }
+   ]
+  },
+  {
+   "type": "stat",
+   "style": "card",
+   "tone": "bad",
+   "lines": [
+    "Sales dropped twenty percent in about two months, roughly thirty million dollars, according to Ad Age."
+   ],
+   "headline": "Sales in 2 months:",
+   "pre": "-",
+   "suf": "%",
+   "to": 20,
+   "sub": "about $30 million lost"
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Less than two months in, they announced the old carton was coming back."
+   ],
+   "headline": "Feb 2009:|[[the old carton returns.]]",
+   "chip": "FEB 2009",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "carton",
+     "x": 140,
+     "y": 90,
+     "w": 170,
+     "h": 290,
+     "v": "old",
+     "d": 0.3
+    },
+    {
+     "k": "person",
+     "x": 400,
+     "y": 230,
+     "s": 1.14,
+     "skin": "b",
+     "shirt": "lav",
+     "pose": "stand",
+     "expr": "smile",
+     "hair": "bun",
+     "d": 0.8
+    },
+    {
+     "k": "float",
+     "x": 360,
+     "y": 140,
+     "text": "\u2713",
+     "size": 50,
+     "color": "#1FA855",
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Your website is your carton. Change it too much, and regulars may not recognise you."
+   ],
+   "headline": "Your website is [[your carton.]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "monitor",
+     "x": 70,
+     "y": 90,
+     "w": 250,
+     "h": 180,
+     "d": 0.3,
+     "lines": [
+      "Old site",
+      "still works"
+     ]
+    },
+    {
+     "k": "prop",
+     "name": "monitor",
+     "x": 350,
+     "y": 120,
+     "w": 160,
+     "h": 130,
+     "d": 1.2,
+     "err": true,
+     "lines": [
+      "New site?"
+     ]
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 60,
+     "y": 320,
+     "w": 450,
+     "h": 60,
+     "d": 0.2
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "lines": [
+    "When did you last check that your customers still recognise your website?"
+   ],
+   "headline": "A quick check:",
+   "q": "Would your regulars still recognise your website?"
+  }
+ ],
+ "caption": "A new carton cost Tropicana about $30 million in two months.\n\nIn January 2009, Tropicana (owned by PepsiCo) redesigned its Pure Premium orange juice carton. The orange with the straw was gone, replaced by a white carton with a glass of juice. Shoppers complained they could not recognise their juice. According to Ad Age, unit sales fell 20% between 1 January and 22 February, roughly $33 million in dollar sales. On 23 February Tropicana announced the old carton was coming back.\n\nYour website works the same way. Regulars know where to tap, what to order and who you are. A redesign that ignores that can cost you the people who already trust you.\n\nWhen did you last check that your customers still recognise your website? DM us the word CARTON and we'll look at it with you.\n\n#moodbod #websitedesign #smallbusinessnamibia #windhoek #namibia\n\nSources: Ad Age via Bloomberg, \"Tropicana Fiasco From Arnell is Gift That Keeps Giving\" (2 Apr 2009); Packaging Strategies, \"Managing Risk in a Package Redesign: What Can We Learn From Tropicana?\" (16 Jun 2009); Tasting Table (8 Oct 2025)."
+}

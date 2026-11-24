@@ -236,3 +236,35 @@ def prop(o):
     if k=="sun":
         return (f"<g class='chk' style='{pp}'><circle cx='{x}' cy='{y}' r='{w/2}' fill='#ffd84d' stroke='{INK}' stroke-width='3'/></g>")
     return _prev_prop4(o)
+
+# ---- props added for the Tropicana carton reel ----
+_prev_prop5=prop
+def _carton(x,y,w,h,v):
+    top=h*0.22; bw=w; out=(f"<polygon points='{x},{y+top} {x+w*0.5},{y} {x+w},{y+top}' fill='{'#f08a24' if v=='old' else '#eeeeee'}' stroke='{INK}' stroke-width='3' stroke-linejoin='round'/>"
+        f"<rect x='{x}' y='{y+top}' width='{w}' height='{h-top}' rx='4' fill='{'#ffb23d' if v=='old' else '#ffffff'}' stroke='{INK}' stroke-width='3'/>")
+    cx=x+w/2; cy=y+top+(h-top)*0.45
+    if v=="old":
+        r=w*0.27
+        out+=(f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='#ff7a00' stroke='{INK}' stroke-width='2.5'/><path d='M{cx+r*0.2} {cy-r*0.9} L{cx+r*0.75} {cy-r*1.9}' stroke='{INK}' stroke-width='3.5' stroke-linecap='round'/>"
+              f"<path d='M{cx} {cy-r} q8 -12 20 -8 q-4 12 -20 8z' fill='#2e9e4f' stroke='{INK}' stroke-width='2'/>")
+    else:
+        gw=w*0.3; gh=(h-top)*0.5
+        out+=(f"<path d='M{cx-gw/2} {cy-gh/2} h{gw} l-{gw*0.15} {gh} h-{gw*0.7}z' fill='#ffc04d' stroke='{INK}' stroke-width='2.5'/>"
+              f"<path d='M{cx-gw/2+4} {cy-gh/2+6} h{gw-8}' stroke='#fff' stroke-width='3'/>")
+    out+=f"<rect x='{x+4}' y='{y+h-(h-top)*0.2}' width='{w-8}' height='{(h-top)*0.12}' rx='3' fill='{'#2e9e4f' if v=='old' else '#999'}' stroke='{INK}' stroke-width='1.5'/>"
+    return out
+def prop(o):
+    k=o.get("name"); x=o.get("x",0); y=o.get("y",0); d=o.get("d",0.3); w=o.get("w",100); h=o.get("h",100)
+    pp=f"animation:pop .5s ease {d}s both;transform-box:fill-box;transform-origin:center bottom"
+    if k=="carton":
+        return f"<g class='chk' style='{pp}'>{_carton(x,y,w,h,o.get('v','old'))}</g>"
+    if k=="fridge":   # supermarket chiller: frame, two shelves, rows of cartons
+        n=o.get("n",4); v=o.get("v","new"); cw=w/(n*1.25+0.25); ch=(h/2)-26; out=(f"<rect x='{x}' y='{y}' width='{w}' height='{h}' rx='14' fill='#e6f4fb' stroke='{INK}' stroke-width='3'/>"
+            f"<rect x='{x+8}' y='{y+8}' width='{w-16}' height='{h-16}' rx='8' fill='#cfeaf7' fill-opacity='.7'/>")
+        for r in range(2):
+            by=y+8+(r+1)*(h-16)/2
+            for i in range(n):
+                out+=_carton(x+cw*0.25+i*cw*1.25,by-ch-4,cw,ch,v)
+            out+=f"<rect x='{x+8}' y='{by-4}' width='{w-16}' height='6' fill='{INK}'/>"
+        return f"<g class='chk' style='{pp}'>{out}</g>"
+    return _prev_prop5(o)
