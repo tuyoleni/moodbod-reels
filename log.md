@@ -5,3 +5,4 @@
 2026-11-21 | 12:33 | crowdstrike-one-update | CrowdStrike outage 19 Jul 2024 | lavender | One update crashed 8.5M computers | BACKUP | https://www.instagram.com/reel/DgABhTCilMd/ | 18116302780875244
 2026-11-21 | 15:45 | healthcare-gov-six | Healthcare.gov launch 1 Oct 2013 | lime | Launch day. Six sign-ups. | CROWD | https://www.instagram.com/reel/DgAXgjrjpH3/ | 18092109719259483
 2026-11-22 | 08:17 | eras-tour-3-5-billion | Ticketmaster Eras Tour presale 15 Nov 2022 | sky | 3.5 billion requests hit one ticket site | RUSH | https://www.instagram.com/reel/DgCJFunE7WF/ | 17931421707429157
+2026-11-24 | 08:16 | prime-day-90-million | Amazon Prime Day outage 16 Jul 2018 | peach | An estimated $90 million gone in 75 minutes | HOUR | https://www.instagram.com/reel/DgHSgO0lJV6/ | 18118767473028317
