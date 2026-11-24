@@ -8,6 +8,7 @@ import numpy as np, soundfile as sf
 HERE=os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0,HERE)
 import chars as C
 import cine as CN
+import promo as PR
 spec=json.load(open(sys.argv[1])); STILLS="--stills" in sys.argv
 OUT=os.path.join(HERE,"out"); TMP=os.path.join(HERE,"tmp_"+spec["slug"]); os.makedirs(OUT,exist_ok=True); os.makedirs(TMP,exist_ok=True)
 BGS={"lavender":"#CDBBFF","sky":"#A9D8FF","peach":"#FFCBA6","lime":"#D6F25A","offwhite":"#F4F1EA","dark":"#141414"}
@@ -159,6 +160,8 @@ def scene_html(sc,dur):
             spd=f"<div style='position:absolute;inset:0;{dots}'></div>"
             return f"<div style='position:relative;height:{ph}px;border:4px solid #111;background:{bg};overflow:hidden;{'transform:rotate('+str(p.get('rot',0))+'deg);'}{A('pop',.45,d)}'>{rays}{spd}<div style='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;{A('pop',.5,d+.15)};{'animation:pop .5s ease '+str(d+.15)+'s both, jolt .5s linear '+str(d+.7)+'s both' if p.get('shake') else ''}'>{icon(p['icon'],p.get('isize',130),'#111',2.2)}</div>{cap}{sfx}</div>"
         body=f"<div style='display:flex;flex-direction:column;gap:12px;margin-top:{sc.get('top',10)}px'>{''.join(panel(i,p) for i,p in enumerate(P))}</div>"
+    elif t=="promo":
+        pre,body=PR.render(sc,dur,sc.get("_tl",[(0,dur)]*len(sc["lines"])))
     elif t=="cinema":
         pre=CN.render(sc,dur)+"<style>h1{color:#fff;text-shadow:0 3px 22px rgba(0,0,0,.75),0 1px 2px rgba(0,0,0,.6)}.lt{position:absolute;left:0;bottom:36px;width:487px}</style>"
         hd=head(sc["headline"]) if sc.get("headline") else ""
@@ -250,7 +253,7 @@ async def render(scenes,total):
         b=await p.chromium.launch(executable_path=shutil.which("google-chrome") or "/usr/bin/google-chrome",args=["--no-sandbox","--allow-file-access-from-files"])
         pg=await b.new_page(viewport={"width":720,"height":1280},device_scale_factor=1.5)
         for si,(sc,s) in enumerate(zip(spec["scenes"],scenes)):
-            f=os.path.join(TMP,f"s{si}.html"); sc["cine"]=spec.get("cine",False); open(f,"w").write(scene_html(sc,s["dur"])); await pg.goto("file://"+f); await pg.wait_for_timeout(300)
+            f=os.path.join(TMP,f"s{si}.html"); sc["cine"]=spec.get("cine",False); sc["_tl"]=[(a-s["start"],d) for a,d in s["lines"]]; open(f,"w").write(scene_html(sc,s["dur"])); await pg.goto("file://"+f); await pg.wait_for_timeout(300)
             await pg.evaluate("document.getAnimations().forEach(a=>a.pause())")
             if STILLS:
                 tq=max(0.5,s['dur']-0.2); await pg.evaluate("(t)=>document.getAnimations().forEach(a=>a.currentTime=t*1000)",tq); await pg.evaluate(SETCNT,tq)

@@ -1,0 +1,186 @@
+{
+ "slug": "moodbod-whatsapp-auto-reply",
+ "format": "promo-ui",
+ "bg": "offwhite",
+ "voice": "af_heart",
+ "speed": 1.05,
+ "cine": false,
+ "scenes": [
+  {
+   "type": "promo",
+   "lines": [
+    "A customer messages you at midnight.",
+    "The free WhatsApp Business app can answer for you."
+   ],
+   "caps": [
+    [
+     "A customer messages",
+     "you at *midnight*"
+    ],
+    [
+     "The *free* app",
+     "answers for you"
+    ]
+   ],
+   "els": [
+    {
+     "k": "space",
+     "h": 30
+    },
+    {
+     "k": "prompt",
+     "who": "Customer \u00b7 00:14",
+     "icon": "message-circle",
+     "text": "Hi, are you open tomorrow?",
+     "type": 1.4,
+     "d": 0.3
+    },
+    {
+     "k": "chips",
+     "items": [
+      "Greeting",
+      "Away",
+      "Quick replies"
+     ],
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "type": "promo",
+   "lines": [
+    "Three tools hide in the Tools tab: a greeting message, an away message and quick replies."
+   ],
+   "caps": [
+    [
+     "*Three* tools",
+     "one tab"
+    ]
+   ],
+   "els": [
+    {
+     "k": "space",
+     "h": 10
+    },
+    {
+     "k": "check",
+     "title": "WHATSAPP BUSINESS \u00b7 TOOLS",
+     "items": [
+      "Greeting message",
+      "Away message",
+      "Quick replies"
+     ],
+     "d": 0.3,
+     "gap": 1.0
+    }
+   ]
+  },
+  {
+   "type": "promo",
+   "lines": [
+    "Greeting welcomes new chats.",
+    "Away answers when you are closed.",
+    "Quick replies save you typing."
+   ],
+   "caps": [
+    [
+     "*Greeting*",
+     "welcomes new chats"
+    ],
+    [
+     "*Away* answers",
+     "when you are closed"
+    ],
+    [
+     "*Quick replies*",
+     "save typing"
+    ]
+   ],
+   "top": 60,
+   "els": [
+    {
+     "k": "fan",
+     "h": 300,
+     "d": 0.3,
+     "cards": [
+      {
+       "icon": "hand",
+       "t": "Greeting",
+       "s": "First contact"
+      },
+      {
+       "icon": "moon",
+       "t": "Away",
+       "s": "When closed",
+       "c": "#cfd6ff"
+      },
+      {
+       "icon": "zap",
+       "t": "Quick replies",
+       "s": "/hours /delivery",
+       "c": "#ffd9b0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "promo",
+   "lines": [
+    "It is not a chatbot, though. Quick replies still need a tap from you.",
+    "For real automation, you need a system built for it."
+   ],
+   "caps": [
+    [
+     "It is *not*",
+     "a chatbot"
+    ],
+    [
+     "Real automation",
+     "needs a *system*"
+    ]
+   ],
+   "els": [
+    {
+     "k": "space",
+     "h": 40
+    },
+    {
+     "k": "big",
+     "text": "Not a bot",
+     "size": 120,
+     "sub": "Quick replies need a tap",
+     "d": 0.3
+    }
+   ]
+  },
+  {
+   "type": "promo",
+   "lines": [
+    "Want it set up for your shop?",
+    "DM us the word reply."
+   ],
+   "caps": [
+    [
+     "Want it *set up*",
+     "for your shop?"
+    ],
+    [
+     "DM us *REPLY*"
+    ]
+   ],
+   "els": [
+    {
+     "k": "space",
+     "h": 120
+    },
+    {
+     "k": "bar",
+     "text": "REPLY",
+     "d": 0.4
+    }
+   ]
+  }
+ ],
+ "caption": "Customers message at midnight, and the free WhatsApp Business app can already answer for you. Under Tools it has three basics: a greeting message for new chats, an away message for when you are closed, and quick replies for questions you answer all day.\n\nIt is not a chatbot, and quick replies still need a tap from you. When you want replies that work without you, that takes a proper automation.\n\nWant it set up for your shop? DM us the word REPLY and we'll show you how.\n\n#moodbod #automation #smallbusinessnamibia #windhoek #whatsappbusiness\n\nSources: WhatsApp Business (whatsappbusiness.com), eesel.ai, Meetergo."
+}
