@@ -9,4 +9,4 @@
 2026-11-24 | 11:27 | blockbuster-50-million | Netflix pitch to Blockbuster 2000 | lavender | Blockbuster laughed at a $50 million offer | ORDER | https://www.instagram.com/reel/DgHobywAn8G/ | 18110335028322091 | character-scene
 2026-11-24 | 11:35 | fyre-sandwich | Fyre Festival Bahamas Apr 2017 | sky | They paid up to $12,780 for paradise. They got a cheese sandwich. | PROMISE | https://www.instagram.com/reel/DgHpVhoAg69/ | 18234005290336022 | character-scene
 2026-11-24 | 12:17 | tropicana-carton | Tropicana carton redesign Jan-Feb 2009 | lime | A new carton cost Tropicana $30 million in two months | CARTON | https://www.instagram.com/reel/DgHuJ2qjksX/ | 18105903548071209 | character-scene
-2026-11-24 | 13:5x | pokemon-go-50x | Pokémon Go launch Jul 2016 | offwhite | Launch day. 15 min past the plan. | LAUNCH | (post pending) | | kinetic-type+comic
+2026-11-24 | 13:56 | pokemon-go-50x | Pokémon Go launch Jul 2016 | offwhite | Launch day. 15 min past the plan. | LAUNCH | https://www.instagram.com/reel/DgH5fhPDsf_/ | 17981762994160483 | kinetic-type+comic
