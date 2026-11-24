@@ -219,6 +219,32 @@ def mix(v,sr,scenes,total):
                 elif k=="sign": place(fx,sr,d,ding(sr,1319,.22))
                 elif k=="phone" and ob.get("spinner"): place(fx,sr,d,buzz(sr,130,.45,.22))
                 elif k=="float": place(fx,sr,d,sparkle(sr))
+        if ty=="promo":
+            for e in sc["els"]:
+                k=e["k"]; d=e.get("d",.3)
+                if k not in("space","confetti"): place(fx,sr,t0+d+.05,pop(sr,560,.2))
+                if k=="phone":
+                    for m in e["msgs"]: place(fx,sr,t0+m["d"]+.05,pop(sr,880 if m["from"]=="me" else 620,.22))
+                    for tt,nb in e.get("badge",[]): place(fx,sr,t0+tt,tone(1300,.08,sr,.12,30))
+                if k=="moon":
+                    for tt,nb in e.get("badge",[]): place(fx,sr,t0+tt,tone(1100+nb*40,.08,sr,.12,30))
+                if k=="toggles":
+                    for i in range(len(e["items"])): place(fx,sr,t0+d+.9+i*.85,pop(sr,1000,.3)); place(fx,sr,t0+d+.9+i*.85+.05,ding(sr,1568,.1)[:int(.3*sr)])
+                if k=="check":
+                    for i in range(len(e["items"])): place(fx,sr,t0+d+.6+i*e.get("gap",.55),ding(sr,1319,.14)[:int(.35*sr)])
+                if k=="fan":
+                    for i in range(3): place(fx,sr,t0+d+i*.22,pop(sr,640+i*120,.22))
+                if k=="bar": place(fx,sr,t0+d+1.6,pop(sr,1100,.3))
+                if k=="confetti":
+                    for j in range(5): place(fx,sr,t0+d+j*.08,pop(sr,800+j*140,.18))
+                if k=="big": place(fx,sr,t0+d+.1,thud(sr,70,.4,.5))
+                if k=="notif":
+                    for nn in e["items"]: place(fx,sr,t0+nn["d"],ding(sr,1480,.12)[:int(.3*sr)])
+                if k=="meter":
+                    for i in range(len(e["rows"])): place(fx,sr,t0+d+.6+i*.5,pop(sr,700+i*100,.22))
+                if k=="burst": place(fx,sr,t0+d,pop(sr,900,.3)); place(fx,sr,t0+d+.05,sparkle(sr))
+                if k=="phone":
+                    for t in e.get("buzz",[]): place(fx,sr,t0+t,buzz(sr,140,.25,.18))
         if ty=="cinema":
             for e in sc.get("sfx",[]):
                 k=e["k"]; tt=t0+e["t"]
@@ -256,7 +282,7 @@ async def render(scenes,total):
             f=os.path.join(TMP,f"s{si}.html"); sc["cine"]=spec.get("cine",False); sc["_tl"]=[(a-s["start"],d) for a,d in s["lines"]]; open(f,"w").write(scene_html(sc,s["dur"])); await pg.goto("file://"+f); await pg.wait_for_timeout(300)
             await pg.evaluate("document.getAnimations().forEach(a=>a.pause())")
             if STILLS:
-                tq=max(0.5,s['dur']-0.2); await pg.evaluate("(t)=>document.getAnimations().forEach(a=>a.currentTime=t*1000)",tq); await pg.evaluate(SETCNT,tq)
+                tq=max(0.5,s['dur']-0.55); await pg.evaluate("(t)=>document.getAnimations().forEach(a=>a.currentTime=t*1000)",tq); await pg.evaluate(SETCNT,tq)
                 iss=await pg.evaluate(QA_JS)
                 for i in iss: QA_ISSUES.append(f"scene {si+1}: {i}")
                 await pg.screenshot(path=os.path.join(OUT,f"{spec['slug']}_still{si+1}.png")); continue
