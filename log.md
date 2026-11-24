@@ -11,3 +11,4 @@
 2026-11-24 | 12:17 | tropicana-carton | Tropicana carton redesign Jan-Feb 2009 | lime | A new carton cost Tropicana $30 million in two months | CARTON | https://www.instagram.com/reel/DgHuJ2qjksX/ | 18105903548071209 | character-scene
 2026-11-24 | 13:56 | pokemon-go-50x | Pokémon Go launch Jul 2016 | offwhite | Launch day. 15 min past the plan. | LAUNCH | https://www.instagram.com/reel/DgH5fhPDsf_/ | 17981762994160483 | kinetic-type+comic
 2026-11-24 | 15:45 | aws-empty-record | AWS us-east-1 outage 20 Oct 2025 | sky | One empty record took Snapchat, Venmo and Fortnite offline | BACKUP | DRAFT - NOT POSTED: daily cap reached (5 posts already today, limit 4) | - | newsroom
+| 2026-11-24 | 16:20 | hubspot-founder-returns | HubSpot brings back co-founder as CEO | red/dusk | HubSpot just swapped its CEO | OWN | https://www.instagram.com/reel/DgIIXmXjeL7/ | 18169523002498777 | cinema |
