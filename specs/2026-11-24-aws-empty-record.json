@@ -1,0 +1,25 @@
+{
+ "slug": "moodbod-aws-empty-record",
+ "format": "newsroom",
+ "bg": "sky",
+ "voice": "af_heart",
+ "cine": true,
+ "scenes": [
+  {"type":"news","lines":["One empty record inside Amazon's cloud knocked Snapchat, Venmo and Fortnite offline, on the twentieth of October, twenty twenty five."],
+   "paper":{"name":"THE DAILY WIRE","date":"Mon 20 Oct 2025","head":"Amazon cloud fails. Apps go dark.","icon":"cloud-off","size":44},
+   "sub":"One empty record. Dozens of apps.","headline":"x","tone":"bad","top":40},
+  {"type":"timeline","lines":["It started late on the nineteenth. A DNS fault in Amazon's biggest region left a database service unreachable. By the next afternoon, Amazon said everything was back to normal."],
+   "headline":"Almost a [[full day.]]",
+   "events":[["19 OCT, 11:48 PM PDT","Errors start"],["20 OCT, 2:24 AM PDT","DNS fault fixed"],["20 OCT, 5:28 AM PDT","Servers still recovering"],["20 OCT, 3:01 PM PT","All services normal"]],"tone":"bad"},
+  {"type":"versus","lines":["Customers did nothing wrong. Their own apps were fine. But they all leaned on one provider in one region, so when it broke, they broke."],
+   "headline":"Your app vs|[[their server.]]",
+   "left":{"title":"Their app","icon":"smartphone","items":["Code was fine","Team did nothing wrong"]},
+   "right":{"title":"Their host","icon":"cloud-off","items":["One region down","Everything stops"]},"tone":"bad"},
+  {"type":"list","lines":["Your website, bookings and WhatsApp orders run on someone else's server too. Know who hosts them, keep backups, and have a plan B for when orders stop."],
+   "headline":"Before your host [[fails:]]",
+   "items":["Know who hosts you","Keep a backup","Have a plan B"]},
+  {"type":"question","lines":["If your host went down tomorrow, how would customers still reach you?"],
+   "headline":"Host down [[tomorrow?]]","q":"If your host went down tomorrow, how would customers reach you?"}
+ ],
+ "caption":"One empty DNS record took Snapchat, Venmo and Fortnite offline.\n\nOn 20 October 2025, a fault in Amazon Web Services' US-EAST-1 region began late on 19 October (11:48 PM PDT), according to The Register's postmortem coverage. A race condition in DynamoDB's automated DNS system left an empty record, and AWS said all services were back to normal by 3:01 PM PT on 20 October. Engadget listed apps like Snapchat, Venmo, Fortnite, Reddit and Zoom among those hit.\n\nThose apps did nothing wrong. They all depended on one host in one region. Your website, bookings and WhatsApp orders depend on a host too. Know who it is, keep a backup and have a plan B.\n\nIf your host went down tomorrow, how would customers reach you? DM us the word BACKUP and we'll check your setup.\n\n#moodbod #websitedesign #smallbusinessnamibia #windhoek #namibia\n\nSources: The Register (23 Oct 2025), Engadget (20 Oct 2025)."
+}

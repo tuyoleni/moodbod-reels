@@ -1,0 +1,11 @@
+One empty DNS record took Snapchat, Venmo and Fortnite offline.
+
+On 20 October 2025, a fault in Amazon Web Services' US-EAST-1 region began late on 19 October (11:48 PM PDT), according to The Register's postmortem coverage. A race condition in DynamoDB's automated DNS system left an empty record, and AWS said all services were back to normal by 3:01 PM PT on 20 October. Engadget listed apps like Snapchat, Venmo, Fortnite, Reddit and Zoom among those hit.
+
+Those apps did nothing wrong. They all depended on one host in one region. Your website, bookings and WhatsApp orders depend on a host too. Know who it is, keep a backup and have a plan B.
+
+If your host went down tomorrow, how would customers reach you? DM us the word BACKUP and we'll check your setup.
+
+#moodbod #websitedesign #smallbusinessnamibia #windhoek #namibia
+
+Sources: The Register (23 Oct 2025), Engadget (20 Oct 2025).
