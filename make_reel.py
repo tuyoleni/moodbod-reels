@@ -7,6 +7,7 @@ import asyncio, json, os, re, subprocess, sys, shutil, math
 import numpy as np, soundfile as sf
 HERE=os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0,HERE)
 import chars as C
+import cine as CN
 spec=json.load(open(sys.argv[1])); STILLS="--stills" in sys.argv
 OUT=os.path.join(HERE,"out"); TMP=os.path.join(HERE,"tmp_"+spec["slug"]); os.makedirs(OUT,exist_ok=True); os.makedirs(TMP,exist_ok=True)
 BGS={"lavender":"#CDBBFF","sky":"#A9D8FF","peach":"#FFCBA6","lime":"#D6F25A","offwhite":"#F4F1EA","dark":"#141414"}
@@ -158,15 +159,22 @@ def scene_html(sc,dur):
             spd=f"<div style='position:absolute;inset:0;{dots}'></div>"
             return f"<div style='position:relative;height:{ph}px;border:4px solid #111;background:{bg};overflow:hidden;{'transform:rotate('+str(p.get('rot',0))+'deg);'}{A('pop',.45,d)}'>{rays}{spd}<div style='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;{A('pop',.5,d+.15)};{'animation:pop .5s ease '+str(d+.15)+'s both, jolt .5s linear '+str(d+.7)+'s both' if p.get('shake') else ''}'>{icon(p['icon'],p.get('isize',130),'#111',2.2)}</div>{cap}{sfx}</div>"
         body=f"<div style='display:flex;flex-direction:column;gap:12px;margin-top:{sc.get('top',10)}px'>{''.join(panel(i,p) for i,p in enumerate(P))}</div>"
+    elif t=="cinema":
+        pre=CN.render(sc,dur)+"<style>h1{color:#fff;text-shadow:0 3px 22px rgba(0,0,0,.75),0 1px 2px rgba(0,0,0,.6)}.lt{position:absolute;left:0;bottom:36px;width:487px}</style>"
+        hd=head(sc["headline"]) if sc.get("headline") else ""
+        lt=sc.get("lt")
+        ltx=f"<div class=lt style='{A('fu',.5,lt.get('d',.8))}'><div style='display:flex;align-items:stretch;background:rgba(10,10,20,.72);border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.18)'><div style='width:8px;background:{TONE}'></div><div style='padding:12px 16px;color:#fff'><div style='font-size:17px;font-weight:800;letter-spacing:1.4px;opacity:.75'>{lt['tag']}</div><div style='font-size:28px;font-weight:700;line-height:1.1;margin-top:3px'>{lt['text']}</div></div></div></div>" if lt else ""
+        body=hd+ltx
     elif t=="question":
         body=head(sc["headline"])+f"<div class=card style='margin-top:60px;padding:36px;display:flex;gap:22px;align-items:center;{A('pop',.6,.6)}'><div style='width:70px;height:70px;border-radius:50%;background:{LIME};display:flex;align-items:center;justify-content:center;font-size:42px;flex:none'>?</div><div style='font-size:40px;font-weight:600;line-height:1.2'>{sc['q']}</div></div>"
     extra=""
+    pre=locals().get('pre','')
     if BAD: extra+=f"<style>.hl{{background:{TONE}}}</style>"
     if sc.get("flash"): extra+=f"<div style='position:absolute;inset:0;background:#E5322D;pointer-events:none;{A('flash',.7,sc['flash'],'ease-out')}'></div>"
     if False:
         import random; random.seed(7); cols=["#FF6B6B","#FFD23F","#3BCEAC","#5B8DEF","#B084F5","#fff"]
         extra+="".join(f"<i style='position:absolute;left:{random.randint(60,660)}px;top:150px;width:{random.randint(9,15)}px;height:{random.randint(14,22)}px;background:{random.choice(cols)};border:1.5px solid #111;border-radius:3px;animation:fall {random.uniform(1.6,2.6):.2f}s ease-in {sc['confetti']+random.random()*.9:.2f}s both'></i>" for _ in range(34))
-    return f"<html><head><style>{CSS}</style>{extra if BAD else ''}</head><body>{extra if not BAD else extra.replace('<style>.hl{background:'+TONE+'}</style>','')}<div class=safe style='{A('sc',.3,0)}{';animation:sc .3s ease both,camera '+str(dur)+'s linear both' if sc.get('cine') else ''}'>{body}</div>{CINE if sc.get('cine') else ''}</body></html>"
+    return f"<html><head><style>{CSS}</style>{extra if BAD else ''}</head><body>{pre}{extra if not BAD else extra.replace('<style>.hl{background:'+TONE+'}</style>','')}<div class=safe style='{A('sc',.3,0)}{';animation:sc .3s ease both,camera '+str(dur)+'s linear both' if sc.get('cine') else ''}'>{body}</div>{CINE if sc.get('cine') else ''}</body></html>"
 # ---------- audio fx / music
 def tone(f,d,sr,vol=.25,dec=18):
     t=np.arange(int(d*sr))/sr; return (np.sin(2*np.pi*f*t)*np.exp(-dec*t)*vol).astype(np.float32)
@@ -208,6 +216,16 @@ def mix(v,sr,scenes,total):
                 elif k=="sign": place(fx,sr,d,ding(sr,1319,.22))
                 elif k=="phone" and ob.get("spinner"): place(fx,sr,d,buzz(sr,130,.45,.22))
                 elif k=="float": place(fx,sr,d,sparkle(sr))
+        if ty=="cinema":
+            for e in sc.get("sfx",[]):
+                k=e["k"]; tt=t0+e["t"]
+                if k=="thud": place(fx,sr,tt,thud(sr,e.get("f",55),e.get("d",.9),e.get("v",.7)))
+                elif k=="ding": place(fx,sr,tt,ding(sr,e.get("f",1319),.2))
+                elif k=="buzz": place(fx,sr,tt,buzz(sr,e.get("f",120),e.get("d",.6),.22))
+                elif k=="pop": place(fx,sr,tt,pop(sr,e.get("f",520),.25))
+                elif k=="spark": place(fx,sr,tt,sparkle(sr))
+                elif k=="beat":
+                    for j in range(e.get("n",4)): place(fx,sr,tt+j*e.get("gap",.6),thud(sr,48,.35,.55))
         if sc.get("flash"): place(fx,sr,t0+sc["flash"],thud(sr,55,.8,.7))
         if False:
             for k in range(5): place(fx,sr,t0+sc["confetti"]+k*.05,pop(sr,800+k*140,.25))

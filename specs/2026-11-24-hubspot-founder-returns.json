@@ -1,0 +1,421 @@
+{
+ "slug": "moodbod-hubspot-founder-returns",
+ "format": "cinema",
+ "bg": "offwhite",
+ "voice": "af_heart",
+ "cine": true,
+ "scenes": [
+  {
+   "type": "cinema",
+   "set": "city",
+   "sky": "dusk",
+   "tone": "bad",
+   "lines": [
+    "November twelfth. HubSpot swaps its CEO in a single announcement."
+   ],
+   "headline": "HubSpot just|[[swapped its CEO.]]",
+   "lt": {
+    "tag": "NOV 12, 2026",
+    "text": "CEO out. Co-founder back.",
+    "d": 1.2
+   },
+   "cam": {
+    "from": [
+     1,
+     0,
+     0
+    ],
+    "to": [
+     2.3,
+     0,
+     0
+    ],
+    "o": [
+     278,
+     507
+    ]
+   },
+   "sfx": [
+    {
+     "k": "beat",
+     "t": 0.3,
+     "n": 3,
+     "gap": 0.9
+    },
+    {
+     "k": "ding",
+     "t": 2.6,
+     "f": 1568
+    }
+   ]
+  },
+  {
+   "type": "cinema",
+   "set": "boardroom",
+   "sky": "night",
+   "tone": "bad",
+   "lines": [
+    "A month earlier, it had cut more than six hundred jobs while racing to rebuild around AI agents."
+   ],
+   "headline": "[[600+]] jobs cut|a month earlier.",
+   "screen": "RESET",
+   "cast": [
+    {
+     "x": 55,
+     "y": 600,
+     "skin": "c",
+     "shirt": "suit",
+     "hair": "short",
+     "expr": "worried",
+     "expr2": "shock",
+     "expr2_at": 1.6,
+     "tie": "#e5322d",
+     "glow": "#ff4a5a",
+     "sweat": true,
+     "d": 0.3
+    },
+    {
+     "x": 265,
+     "y": 590,
+     "s": 2.0,
+     "skin": "a",
+     "shirt": "char",
+     "hair": "bun",
+     "expr": "calm",
+     "expr2": "cry",
+     "expr2_at": 2.4,
+     "glow": "#ff4a5a",
+     "d": 0.5
+    },
+    {
+     "x": 480,
+     "y": 600,
+     "skin": "e",
+     "shirt": "red",
+     "hair": "long",
+     "expr": "angry",
+     "anim": "shake",
+     "glow": "#ff4a5a",
+     "d": 0.7,
+     "flip": true
+    }
+   ],
+   "fx": [
+    {
+     "k": "alert"
+    },
+    {
+     "k": "papers"
+    },
+    {
+     "k": "flash",
+     "d": 1.6,
+     "col": "#ff2a3d"
+    }
+   ],
+   "cam": {
+    "from": [
+     1,
+     0,
+     0
+    ],
+    "to": [
+     1.28,
+     0,
+     -30
+    ],
+    "o": [
+     360,
+     720
+    ]
+   },
+   "punch": 1.6,
+   "sfx": [
+    {
+     "k": "thud",
+     "t": 1.6
+    },
+    {
+     "k": "buzz",
+     "t": 1.6,
+     "f": 110,
+     "d": 0.5
+    }
+   ]
+  },
+  {
+   "type": "cinema",
+   "set": "hall",
+   "sky": "night",
+   "lines": [
+    "Now the co-founder who stepped down five years ago walks back in. The company is calling it a refounding."
+   ],
+   "headline": "The founder|[[walks back in.]]",
+   "lt": {
+    "tag": "REFOUNDING",
+    "text": "Five years after stepping down",
+    "d": 4.2
+   },
+   "cast": [
+    {
+     "x": 245,
+     "y": 470,
+     "s": 2.3,
+     "skin": "d",
+     "shirt": "char",
+     "hair": "short",
+     "expr": "calm",
+     "expr2": "smirk",
+     "expr2_at": 4.0,
+     "tie": "#ffd23f",
+     "sil": true,
+     "reveal": 3.4,
+     "glow": "#ffd78a",
+     "enter": "walk",
+     "walk": 3.0,
+     "d": 0.2
+    }
+   ],
+   "fx": [
+    {
+     "k": "flash",
+     "d": 3.4,
+     "col": "#fff3d0"
+    }
+   ],
+   "cam": {
+    "from": [
+     1,
+     0,
+     20
+    ],
+    "to": [
+     1.7,
+     0,
+     0
+    ],
+    "o": [
+     360,
+     540
+    ]
+   },
+   "punch": 3.4,
+   "sfx": [
+    {
+     "k": "beat",
+     "t": 0.3,
+     "n": 5,
+     "gap": 0.62
+    },
+    {
+     "k": "thud",
+     "t": 3.4,
+     "f": 50
+    },
+    {
+     "k": "ding",
+     "t": 3.5,
+     "f": 1047
+    }
+   ]
+  },
+  {
+   "type": "cinema",
+   "set": "office",
+   "sky": "warm",
+   "tone": "bad",
+   "lines": [
+    "Over three hundred thousand businesses use that software. When the boss resets the plan, their tools can change too."
+   ],
+   "headline": "[[311,000]]|customers.",
+   "cast": [
+    {
+     "x": 150,
+     "y": 520,
+     "s": 2.2,
+     "skin": "a",
+     "shirt": "camel",
+     "hair": "afro",
+     "expr": "calm",
+     "expr2": "worried",
+     "expr2_at": 3.2,
+     "glow": "#ffb36b",
+     "d": 0.3
+    }
+   ],
+   "fx": [
+    {
+     "k": "cards",
+     "x": 330,
+     "y": 640,
+     "cards": [
+      [
+       "users",
+       "CRM"
+      ],
+      [
+       "mail",
+       "Email"
+      ],
+      [
+       "globe",
+       "Site"
+      ],
+      [
+       "file-text",
+       "Forms"
+      ]
+     ]
+    }
+   ],
+   "cam": {
+    "from": [
+     1.2,
+     0,
+     -20
+    ],
+    "to": [
+     1,
+     0,
+     0
+    ],
+    "o": [
+     300,
+     640
+    ]
+   },
+   "sfx": [
+    {
+     "k": "pop",
+     "t": 0.5
+    },
+    {
+     "k": "pop",
+     "t": 0.75
+    },
+    {
+     "k": "pop",
+     "t": 1.0
+    },
+    {
+     "k": "pop",
+     "t": 1.25
+    },
+    {
+     "k": "buzz",
+     "t": 3.2,
+     "f": 130,
+     "d": 0.4
+    }
+   ]
+  },
+  {
+   "type": "cinema",
+   "set": "office",
+   "sky": "dusk",
+   "lines": [
+    "Use tools, but own your website and your customer list. Never build your business only on rented ground."
+   ],
+   "headline": "Own your [[website.]]|Own your [[list.]]",
+   "lt": {
+    "tag": "THE TAKEAWAY",
+    "text": "Rent tools. Own the core.",
+    "d": 1.6
+   },
+   "cast": [
+    {
+     "x": 150,
+     "y": 560,
+     "s": 1.9,
+     "skin": "a",
+     "shirt": "camel",
+     "hair": "afro",
+     "expr": "worried",
+     "expr2": "grin",
+     "expr2_at": 1.5,
+     "glow": "#ffb36b",
+     "anim": "cheer",
+     "d": 0.3
+    }
+   ],
+   "fx": [
+    {
+     "k": "embers"
+    },
+    {
+     "k": "flash",
+     "d": 1.5,
+     "col": "#fff3d0"
+    }
+   ],
+   "cam": {
+    "from": [
+     1.0,
+     0,
+     0
+    ],
+    "to": [
+     1.18,
+     0,
+     -20
+    ],
+    "o": [
+     240,
+     720
+    ]
+   },
+   "sfx": [
+    {
+     "k": "ding",
+     "t": 1.5,
+     "f": 1047
+    },
+    {
+     "k": "spark",
+     "t": 1.55
+    }
+   ]
+  },
+  {
+   "type": "cinema",
+   "set": "city",
+   "sky": "night",
+   "tone": "bad",
+   "moon": true,
+   "tower_x": 420,
+   "lines": [
+    "Is your website and customer list yours, or rented?"
+   ],
+   "headline": "Yours, or [[rented?]]",
+   "lt": {
+    "tag": "ASK YOURSELF",
+    "text": "Is your website and customer list yours?",
+    "d": 0.8
+   },
+   "cam": {
+    "from": [
+     1.0,
+     0,
+     0
+    ],
+    "to": [
+     1.2,
+     -30,
+     -40
+    ],
+    "o": [
+     360,
+     640
+    ]
+   },
+   "sfx": [
+    {
+     "k": "ding",
+     "t": 0.6,
+     "f": 988
+    }
+   ]
+  }
+ ],
+ "caption": "HubSpot replaced its CEO on Nov 12 and brought back co-founder Brian Halligan, five years after he stepped down. It came about a month after the company cut roughly 600 jobs, and HubSpot called the move a \"refounding\" as it reworks the business around AI agents.\n\nFor a small business the lesson is quiet: a tool you rent can change direction on its own schedule. Use the tools, but keep your website, domain and customer list somewhere you control.\n\nIs your website and customer list yours, or rented? DM us the word OWN and we'll look at it with you.\n\n#moodbod #websitedevelopment #smallbusinessnamibia #windhoek #automation\n\nSources: Inc, PYMNTS, The Next Web, CMSWire, Finimize (Nov 12, 2026)."
+}

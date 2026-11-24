@@ -51,3 +51,6 @@ Steps:
 - INSTAGRAM_GET_IG_MEDIA for the permalink. Append to log.md: date | time | slug | event | colour | hook | DM word | permalink | media_id | format. Commit and push log.md.
 On failure after retries: keep draft, log "FAILED: reason", never create a second post.
 Final message: 3 lines (event, hook, permalink or why not posted).
+
+## 2d. CINEMA ENGINE (default look from 2026-11-24, approved by user)
+Use scene type `cinema` (cine.py) for most scenes; see specs/2026-11-24-hubspot-founder-returns.json as the reference. Sets: city, boardroom, hall, office. Fields: set, sky (dusk/night/alert/warm/day), cast (people with expr/expr2/expr2_at, glow, sil+reveal, enter walk/fade/pop, tie, hair, skin, shirt), fx (speed, rain, papers, embers, alert, cards, text, flash), cam {from,to,o} (scale,x,y), punch, lt (lower third), sfx list. Every reel must change camera move, set, and cast between scenes and across reels; never reuse the same set order twice in a row. Quality bar: it must look like a short film, not a slide. Prefer timely news hooks verified with 2+ sources; generic characters only, no real likenesses or invented quotes. New sets/effects are welcome: extend cine.py.

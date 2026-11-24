@@ -2,7 +2,7 @@ from icons import icon_at
 """Flat outlined people + props as inline SVG (moodbod illustrated style). Coordinates: person is 100x205 local units."""
 INK="#1c2033"
 SKIN={"a":"#8d5a3b","b":"#6b4226","c":"#c68642","d":"#e0ac69","e":"#f1c27d"}
-SHIRT={"lav":"#d9d3f0","cream":"#f7e3b2","lime":"#e3ee9a","blue":"#bcd8f5","pink":"#f6c6cf","white":"#f4f4f4"}
+SHIRT={"lav":"#d9d3f0","cream":"#f7e3b2","lime":"#e3ee9a","blue":"#bcd8f5","pink":"#f6c6cf","white":"#f4f4f4","suit":"#3a4170","char":"#2c2f3f","red":"#e5605a","teal":"#4fb3a9","camel":"#c99a5b","black":"#1d1f2b"}
 HAIR="#231f20"; TROU="#34385a"
 ARMS={ # (shoulder, elbow, hand) per side
  "stand":{"L":[(30,60),(22,90),(22,116)],"R":[(70,60),(78,90),(78,116)]},
@@ -21,11 +21,25 @@ def _arm(pts,shirt,skin):
             f"<path d='{d}' fill='none' stroke='{shirt}' stroke-width='11' stroke-linecap='round' stroke-linejoin='round'/>"
             f"<circle cx='{hx}' cy='{hy}' r='7' fill='{skin}' stroke='{INK}' stroke-width='3'/>")
 def face(expr):
-    eyes=f"<circle cx='43' cy='31' r='2.4' fill='{INK}'/><circle cx='57' cy='31' r='2.4' fill='{INK}'/>"
-    m={"smile":f"<path d='M42 39 Q50 46 58 39' fill='none' stroke='{INK}' stroke-width='2.6' stroke-linecap='round'/>",
-       "frown":f"<path d='M43 43 Q50 37 57 43' fill='none' stroke='{INK}' stroke-width='2.6' stroke-linecap='round'/><path d='M38 24 L46 26 M62 24 L54 26' stroke='{INK}' stroke-width='2.4' stroke-linecap='round'/>",
-       "worried":f"<path d='M43 43 Q50 39 57 43' fill='none' stroke='{INK}' stroke-width='2.6' stroke-linecap='round'/><path d='M38 26 L46 23 M62 26 L54 23' stroke='{INK}' stroke-width='2.4' stroke-linecap='round'/>",
-       "open":f"<ellipse cx='50' cy='41' rx='4' ry='5' fill='{INK}'/>"}[expr]
+    I=INK
+    eyes=f"<circle cx='43' cy='31' r='2.4' fill='{I}'/><circle cx='57' cy='31' r='2.4' fill='{I}'/>"
+    if expr=="shock":
+        return (f"<circle cx='42' cy='31' r='6' fill='#fff' stroke='{I}' stroke-width='2'/><circle cx='58' cy='31' r='6' fill='#fff' stroke='{I}' stroke-width='2'/><circle cx='42' cy='31' r='1.8' fill='{I}'/><circle cx='58' cy='31' r='1.8' fill='{I}'/>"
+                f"<path d='M35 20 L47 18 M65 20 L53 18' stroke='{I}' stroke-width='2.4' stroke-linecap='round'/><ellipse cx='50' cy='44' rx='5' ry='7' fill='{I}'/>")
+    if expr=="angry":
+        return (eyes+f"<path d='M37 22 L47 27 M63 22 L53 27' stroke='{I}' stroke-width='3' stroke-linecap='round'/><path d='M42 45 Q50 38 58 45' fill='none' stroke='{I}' stroke-width='3' stroke-linecap='round'/>")
+    if expr=="smirk":
+        return (eyes+f"<path d='M37 24 L46 25 M62 21 L54 24' stroke='{I}' stroke-width='2.4' stroke-linecap='round'/><path d='M42 41 Q52 46 61 37' fill='none' stroke='{I}' stroke-width='2.6' stroke-linecap='round'/>")
+    if expr=="cry":
+        return (f"<path d='M39 31 Q43 28 47 31 M53 31 Q57 28 61 31' fill='none' stroke='{I}' stroke-width='2.4' stroke-linecap='round'/><path d='M43 45 Q50 39 57 45' fill='none' stroke='{I}' stroke-width='2.6' stroke-linecap='round'/><path d='M40 35 Q38 42 40 48 M60 35 Q62 42 60 48' fill='none' stroke='#6fc0ff' stroke-width='3' stroke-linecap='round'/>")
+    if expr=="grin":
+        return (eyes+f"<path d='M40 38 Q50 52 60 38Z' fill='#fff' stroke='{I}' stroke-width='2.4' stroke-linejoin='round'/>")
+    if expr=="calm":
+        return (eyes+f"<path d='M44 42 L56 42' stroke='{I}' stroke-width='2.6' stroke-linecap='round'/><path d='M38 24 L46 24 M62 24 L54 24' stroke='{I}' stroke-width='2.2' stroke-linecap='round'/>")
+    m={"smile":f"<path d='M42 39 Q50 46 58 39' fill='none' stroke='{I}' stroke-width='2.6' stroke-linecap='round'/>",
+       "frown":f"<path d='M43 43 Q50 37 57 43' fill='none' stroke='{I}' stroke-width='2.6' stroke-linecap='round'/><path d='M38 24 L46 26 M62 24 L54 26' stroke='{I}' stroke-width='2.4' stroke-linecap='round'/>",
+       "worried":f"<path d='M43 43 Q50 39 57 43' fill='none' stroke='{I}' stroke-width='2.6' stroke-linecap='round'/><path d='M38 26 L46 23 M62 26 L54 23' stroke='{I}' stroke-width='2.4' stroke-linecap='round'/>",
+       "open":f"<ellipse cx='50' cy='41' rx='4' ry='5' fill='{I}'/>"}[expr]
     return eyes+m
 def _wrap_pivot(inner,px,py,style):
     return f"<g transform='translate({px},{py})'><g style='transform-origin:0 0;transform-box:view-box;{style}'><g transform='translate({-px},{-py})'>{inner}</g></g></g>"
