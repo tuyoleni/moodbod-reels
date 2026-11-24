@@ -1,0 +1,244 @@
+{
+ "slug": "2026-11-24-fyre-sandwich",
+ "bg": "lavender",
+ "voice": "af_heart",
+ "scenes": [
+  {
+   "type": "stage",
+   "lines": [
+    "They paid up to twelve thousand seven hundred eighty dollars for paradise. They got a cheese sandwich."
+   ],
+   "headline": "$12,780 for paradise.|[[Got a sandwich.]]",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "sun",
+     "x": 470,
+     "y": 70,
+     "w": 70
+    },
+    {
+     "k": "prop",
+     "name": "palm",
+     "x": 90,
+     "y": 120,
+     "w": 110,
+     "h": 250,
+     "d": 0.2
+    },
+    {
+     "k": "prop",
+     "name": "bench",
+     "x": 190,
+     "y": 370,
+     "w": 300,
+     "h": 22,
+     "legs": 46
+    },
+    {
+     "k": "person",
+     "x": 260,
+     "y": 210,
+     "s": 1.14,
+     "skin": "b",
+     "shirt": "pink",
+     "pose": "shrug",
+     "expr": "frown",
+     "hair": "bun",
+     "d": 0.5
+    },
+    {
+     "k": "prop",
+     "name": "sandwich",
+     "x": 390,
+     "y": 300,
+     "w": 90,
+     "h": 62,
+     "d": 0.9
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Fyre Festival, April twenty seventeen, in the Bahamas. The ads showed models, yachts and top acts."
+   ],
+   "headline": "The ads:|[[models and yachts.]]",
+   "chip": "BAHAMAS 2017",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "sun",
+     "x": 100,
+     "y": 80,
+     "w": 60
+    },
+    {
+     "k": "prop",
+     "name": "palm",
+     "x": 400,
+     "y": 130,
+     "w": 110,
+     "h": 240,
+     "d": 0.3
+    },
+    {
+     "k": "phone",
+     "x": 120,
+     "y": 150,
+     "w": 150,
+     "h": 220,
+     "lines": [
+      "Luxury",
+      "island",
+      "weekend"
+     ],
+     "d": 0.4
+    },
+    {
+     "k": "bubble",
+     "x": 300,
+     "y": 80,
+     "text": "Wow!",
+     "w": 120,
+     "h": 56,
+     "d": 1.2,
+     "tail": "left"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Guests landed to half-built tents, feral dogs and limp cheese sandwiches."
+   ],
+   "headline": "Real life:|[[half-built tents.]]",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "tent",
+     "x": 70,
+     "y": 230,
+     "w": 170,
+     "h": 120,
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "tent",
+     "x": 290,
+     "y": 260,
+     "w": 150,
+     "h": 100,
+     "d": 0.5
+    },
+    {
+     "k": "prop",
+     "name": "suitcase",
+     "x": 470,
+     "y": 300,
+     "w": 60,
+     "h": 60,
+     "d": 0.8
+    },
+    {
+     "k": "person",
+     "x": 200,
+     "y": 200,
+     "s": 1.14,
+     "skin": "c",
+     "shirt": "lav",
+     "pose": "shrug",
+     "expr": "worried",
+     "hair": "short",
+     "d": 0.9
+    },
+    {
+     "k": "bubble",
+     "x": 320,
+     "y": 130,
+     "text": "No hotel?",
+     "w": 175,
+     "h": 58,
+     "d": 1.6,
+     "tail": "left"
+    }
+   ]
+  },
+  {
+   "type": "stat",
+   "style": "big",
+   "lines": [
+    "Later, at least eighty investors lost more than twenty four million dollars, according to BuzzFeed News.",
+    "The organiser was sentenced to six years in prison."
+   ],
+   "headline": "Investors lost|[[the money.]]",
+   "sub": "lost by 80+ investors",
+   "pre": "$",
+   "suf": "M",
+   "to": 24,
+   "dec": 0,
+   "tone": "bad"
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Your website makes a promise too. Customers pay for it before they see the real thing."
+   ],
+   "headline": "Your site|[[makes a promise.]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "laptop",
+     "x": 90,
+     "y": 240,
+     "w": 220,
+     "h": 130,
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "parcel",
+     "x": 360,
+     "y": 300,
+     "w": 100,
+     "h": 70,
+     "d": 0.9
+    },
+    {
+     "k": "person",
+     "x": 330,
+     "y": 190,
+     "s": 1.14,
+     "skin": "a",
+     "shirt": "lime",
+     "pose": "phone",
+     "expr": "smile",
+     "hair": "long",
+     "d": 0.6
+    },
+    {
+     "k": "bubble",
+     "x": 60,
+     "y": 110,
+     "text": "Order in minutes!",
+     "w": 300,
+     "h": 60,
+     "d": 1.4,
+     "tail": "left"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "lines": [
+    "Does what your website promises match what your customer gets?"
+   ],
+   "headline": "Promise|[[vs reality.]]",
+   "q": "Does your website match what customers actually get?"
+  }
+ ],
+ "caption": "They paid up to $12,780 for paradise. They got a cheese sandwich.\n\nFyre Festival promised a luxury weekend in the Bahamas in April 2017, with models, yachts and top acts in the ads. Guests arrived to half-built tents, feral dogs and limp cheese sandwiches. The organiser, Billy McFarland, was later sentenced to six years in prison, after at least 80 investors lost more than $24 million (according to BuzzFeed News).\n\nThe pictures sold it before anyone landed. Your website and Instagram do the same for your business: they make a promise, and your customers pay for it before they see the real thing. If the page says \"order in minutes\" and the order takes two days, you have a small Fyre Festival.\n\nDoes what your website promises match what your customer gets? DM us the word PROMISE and we'll compare the two for you.\n\n#moodbod #websitedesign #smallbusinessnamibia #windhoek #namibia\n\nSources: CNN via CBS News, \"Fyre Festival: When a $12,000 luxury festival in paradise turns into chaos\" (29 Apr 2017); BuzzFeed News, \"Fyre Festival founder Billy McFarland sentenced to six years in prison\"; Jezebel (28 Apr 2017)."
+}

@@ -216,3 +216,23 @@ def prop(o):
                 f"<rect x='{x+w/2-8}' y='{y}' width='16' height='{h}' fill='#c99a5b' stroke='{INK}' stroke-width='2'/>"
                 f"<rect x='{x+w*0.1}' y='{y+h*0.5}' width='{w*0.22}' height='{h*0.28}' rx='2' fill='#fff' stroke='{INK}' stroke-width='2'/></g>")
     return _prev_prop3(o)
+
+# ---- props added for the Fyre Festival reel ----
+_prev_prop4=prop
+def prop(o):
+    k=o.get("name"); x=o.get("x",0); y=o.get("y",0); d=o.get("d",0.3); w=o.get("w",100); h=o.get("h",70)
+    pp=f"animation:pop .5s ease {d}s both;transform-box:fill-box;transform-origin:center bottom"
+    if k=="tent":   # relief-style canvas tent
+        return (f"<g class='chk' style='{pp}'><polygon points='{x},{y+h} {x+w/2},{y} {x+w},{y+h}' fill='#e9e4d2' stroke='{INK}' stroke-width='3' stroke-linejoin='round'/>"
+                f"<polygon points='{x+w*0.4},{y+h} {x+w/2},{y+h*0.42} {x+w*0.6},{y+h}' fill='#6b6b66' stroke='{INK}' stroke-width='2.5'/>"
+                f"<line x1='{x-10}' y1='{y+h}' x2='{x+w+10}' y2='{y+h}' stroke='{INK}' stroke-width='3'/></g>")
+    if k=="palm":
+        return (f"<g class='chk' style='{pp}'><path d='M{x} {y+h} Q{x+8} {y+h*0.5} {x+w*0.15} {y+8}' fill='none' stroke='#8a5a2b' stroke-width='9' stroke-linecap='round'/>"
+                + "".join(f"<path d='M{x+w*0.15} {y+8} Q{x+w*0.15+dx} {y-24} {x+w*0.15+ex} {y+ey}' fill='none' stroke='#1FA855' stroke-width='10' stroke-linecap='round'/>" for dx,ex,ey in [(-40,-70,18),(-10,-30,34),(40,64,16),(14,34,36),(0,0,-30)])+"</g>")
+    if k=="sandwich":
+        return (f"<g class='chk' style='{pp}'><rect x='{x}' y='{y+h*0.7}' width='{w}' height='{h*0.3}' rx='6' fill='#e8c58a' stroke='{INK}' stroke-width='3'/>"
+                f"<rect x='{x+4}' y='{y+h*0.42}' width='{w-8}' height='{h*0.28}' fill='#ffd84d' stroke='{INK}' stroke-width='2.5'/>"
+                f"<rect x='{x}' y='{y+h*0.12}' width='{w}' height='{h*0.32}' rx='8' fill='#e8c58a' stroke='{INK}' stroke-width='3'/></g>")
+    if k=="sun":
+        return (f"<g class='chk' style='{pp}'><circle cx='{x}' cy='{y}' r='{w/2}' fill='#ffd84d' stroke='{INK}' stroke-width='3'/></g>")
+    return _prev_prop4(o)
