@@ -1,0 +1,368 @@
+{
+ "slug": "2026-11-24-blockbuster-50-million",
+ "bg": "lavender",
+ "voice": "af_heart",
+ "caption": "Blockbuster laughed at a $50 million offer.\n\nIn 2000, according to Fortune, the Netflix founders tried to sell their startup to Blockbuster for $50 million and were laughed out of the room. Blockbuster had more than 9,000 stores by 2004 and made $800 million (16% of revenue) from late fees alone in 2000. It filed for bankruptcy in 2010, and Fortune says it is now down to a single store.\n\nBlockbuster wasn't careless. It was making money the old way, so the new way looked like a toy. Your customers are already ordering on their phones. If they can't do it with you, they go to someone who lets them.\n\nCould a customer order from you tonight without calling? DM us the word ORDER and we'll check your site on a phone for you.\n\n#moodbod #websitedesign #smallbusinessnamibia #windhoek #namibia\n\nSources: Fortune, \"Netflix cofounder Marc Randolph recalls Blockbuster rejecting chance to buy it\" (14 Apr 2023); Mental Floss, \"15 Fast-Forward Facts About Blockbuster Video\".",
+ "scenes": [
+  {
+   "type": "stage",
+   "lines": [
+    "Blockbuster laughed at a fifty million dollar offer."
+   ],
+   "headline": "$50 million.|[[Laughed at.]]",
+   "chip": "YEAR 2000",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "window",
+     "x": 60,
+     "y": 80,
+     "w": 150,
+     "h": 110
+    },
+    {
+     "k": "prop",
+     "name": "clock",
+     "x": 440,
+     "y": 100,
+     "w": 70
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 150,
+     "y": 330,
+     "w": 300,
+     "h": 80
+    },
+    {
+     "k": "prop",
+     "name": "papers",
+     "x": 230,
+     "y": 300,
+     "d": 0.6
+    },
+    {
+     "k": "prop",
+     "name": "mug",
+     "x": 380,
+     "y": 298,
+     "d": 0.8
+    },
+    {
+     "k": "person",
+     "x": 90,
+     "y": 196,
+     "s": 1.14,
+     "skin": "e",
+     "shirt": "blue",
+     "pose": "hold",
+     "expr": "smile",
+     "hair": "short",
+     "d": 0.3,
+     "enter": "L"
+    },
+    {
+     "k": "person",
+     "x": 400,
+     "y": 196,
+     "s": 1.14,
+     "skin": "a",
+     "shirt": "cream",
+     "pose": "shrug",
+     "expr": "smile",
+     "flip": true,
+     "d": 0.7,
+     "hair": "short"
+    },
+    {
+     "k": "bubble",
+     "x": 300,
+     "y": 100,
+     "text": "Ha!",
+     "w": 110,
+     "h": 56,
+     "d": 1.4,
+     "tail": "right"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Two founders pitched their online DVD startup to Blockbuster in two thousand. The CEO thought the internet hype was overblown."
+   ],
+   "headline": "Netflix asked.|[[Blockbuster said no.]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "laptop",
+     "x": 120,
+     "y": 262,
+     "w": 150,
+     "d": 0.4
+    },
+    {
+     "k": "person",
+     "x": 150,
+     "y": 196,
+     "s": 1.14,
+     "skin": "d",
+     "shirt": "lav",
+     "pose": "hold",
+     "expr": "worried",
+     "hair": "short",
+     "d": 0.3
+    },
+    {
+     "k": "person",
+     "x": 400,
+     "y": 196,
+     "s": 1.14,
+     "skin": "b",
+     "shirt": "pink",
+     "pose": "shrug",
+     "expr": "frown",
+     "flip": true,
+     "d": 0.7,
+     "hair": "bun"
+    },
+    {
+     "k": "bubble",
+     "x": 230,
+     "y": 100,
+     "text": "Overblown.",
+     "w": 190,
+     "h": 56,
+     "d": 1.5,
+     "tail": "right"
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 120,
+     "y": 340,
+     "w": 300,
+     "h": 80
+    }
+   ]
+  },
+  {
+   "type": "stat",
+   "style": "bars",
+   "lines": [
+    "Blockbuster was huge. Over nine thousand stores by two thousand four, and eight hundred million dollars from late fees alone in two thousand."
+   ],
+   "headline": "Late fees alone:",
+   "sub": "in 2000, per Mental Floss",
+   "pre": "$",
+   "suf": "M",
+   "to": 800,
+   "dec": 0,
+   "bars": [
+    [
+     "Late fees: 16% of revenue",
+     16,
+     "#D6F25A"
+    ],
+    [
+     "Everything else",
+     84,
+     "#ffffff"
+    ]
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Customers moved online. Blockbuster went bankrupt in twenty ten."
+   ],
+   "tone": "bad",
+   "headline": "2010.|[[Bankrupt.]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "sofa",
+     "x": 120,
+     "y": 300,
+     "w": 280,
+     "h": 90,
+     "color": "#8b6fd6"
+    },
+    {
+     "k": "prop",
+     "name": "window",
+     "x": 60,
+     "y": 80,
+     "w": 130,
+     "h": 100
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 500,
+     "y": 392
+    },
+    {
+     "k": "person",
+     "x": 250,
+     "y": 200,
+     "s": 1.14,
+     "skin": "c",
+     "shirt": "lime",
+     "pose": "stand",
+     "expr": "smile",
+     "hair": "long",
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "laptop",
+     "x": 330,
+     "y": 300,
+     "w": 130,
+     "d": 0.7
+    },
+    {
+     "k": "bubble",
+     "x": 370,
+     "y": 120,
+     "text": "Play",
+     "w": 110,
+     "h": 56,
+     "d": 1.3,
+     "tail": "left"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Once there were more than nine thousand stores. According to Fortune, one is left."
+   ],
+   "tone": "bad",
+   "headline": "9,000 stores.|[[Now one.]]",
+   "objects": [
+    {
+     "k": "sign",
+     "x": 70,
+     "y": 90,
+     "text": "CLOSED",
+     "color": "#d3382c",
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "rope",
+     "x": 90,
+     "y": 300,
+     "w": 300,
+     "d": 0.4
+    },
+    {
+     "k": "person",
+     "x": 250,
+     "y": 210,
+     "s": 1.14,
+     "skin": "a",
+     "shirt": "cream",
+     "pose": "shrug",
+     "expr": "worried",
+     "hair": "short",
+     "d": 0.5
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 440,
+     "y": 392,
+     "d": 0.6
+    },
+    {
+     "k": "prop",
+     "name": "clock",
+     "x": 430,
+     "y": 130,
+     "w": 70,
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Your customers do the same thing. If they can't order from you on their phone, they move on to someone who lets them."
+   ],
+   "headline": "Can they order|[[on their phone?]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 90,
+     "y": 340,
+     "w": 280,
+     "h": 80
+    },
+    {
+     "k": "prop",
+     "name": "monitor",
+     "x": 130,
+     "y": 230,
+     "w": 150,
+     "h": 100,
+     "d": 0.4
+    },
+    {
+     "k": "prop",
+     "name": "mug",
+     "x": 330,
+     "y": 308,
+     "d": 0.8
+    },
+    {
+     "k": "person",
+     "x": 420,
+     "y": 210,
+     "s": 1.14,
+     "skin": "b",
+     "shirt": "white",
+     "pose": "phone",
+     "expr": "smile",
+     "hair": "short",
+     "d": 0.6,
+     "flip": true
+    },
+    {
+     "k": "phone",
+     "x": 470,
+     "y": 230,
+     "w": 90,
+     "h": 150,
+     "lines": [
+      "Order",
+      "now"
+     ],
+     "d": 1.0
+    },
+    {
+     "k": "bubble",
+     "x": 300,
+     "y": 110,
+     "text": "Order here?",
+     "w": 180,
+     "h": 56,
+     "d": 1.5,
+     "tail": "right"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "lines": [
+    "If a customer found you tonight, could they order without calling?"
+   ],
+   "headline": "Tonight,|[[at 9 pm.]]",
+   "q": "Could a customer order from you without calling?"
+  }
+ ]
+}
