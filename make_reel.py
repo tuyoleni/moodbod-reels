@@ -58,7 +58,7 @@ h1{{font-weight:500;font-size:52px;line-height:1.12;letter-spacing:-1px}}
 @keyframes outR{{to{{opacity:0;transform:translateX(220px)}}}}
 @keyframes outL{{to{{opacity:0;transform:translateX(-220px)}}}}
 @keyframes floaty{{0%{{opacity:0;transform:translateY(0) scale(.6)}}30%{{opacity:1}}100%{{opacity:0;transform:translateY(-70px) scale(1.2)}}}}
-@keyframes growY{{from{{transform:scaleY(0)}}to{{transform:scaleY(1)}}}}@keyframes grow{{from{{transform:scaleX(0)}}to{{transform:scaleX(1)}}}}@keyframes jolt{{0%{{transform:translate(0,0)}}15%{{transform:translate(-10px,6px)}}30%{{transform:translate(9px,-7px)}}45%{{transform:translate(-7px,5px)}}60%{{transform:translate(6px,-4px)}}80%{{transform:translate(-3px,2px)}}100%{{transform:none}}}}
+@keyframes camera{{from{{transform:scale(1) translateY(0)}}to{{transform:scale(1.025) translateY(-6px)}}}}@keyframes grainmv{{0%{{transform:translate(0,0)}}25%{{transform:translate(-14px,9px)}}50%{{transform:translate(11px,-12px)}}75%{{transform:translate(-8px,-6px)}}100%{{transform:translate(6px,13px)}}}}@keyframes growY{{from{{transform:scaleY(0)}}to{{transform:scaleY(1)}}}}@keyframes grow{{from{{transform:scaleX(0)}}to{{transform:scaleX(1)}}}}@keyframes jolt{{0%{{transform:translate(0,0)}}15%{{transform:translate(-10px,6px)}}30%{{transform:translate(9px,-7px)}}45%{{transform:translate(-7px,5px)}}60%{{transform:translate(6px,-4px)}}80%{{transform:translate(-3px,2px)}}100%{{transform:none}}}}
 @keyframes flash{{0%{{opacity:0}}12%{{opacity:.38}}100%{{opacity:0}}}}
 @keyframes fall{{0%{{opacity:0;transform:translateY(-40px) rotate(0)}}15%{{opacity:1}}100%{{opacity:1;transform:translateY(420px) rotate(540deg)}}}}
 @keyframes wob{{0%,100%{{transform:rotate(-5deg)}}50%{{transform:rotate(5deg)}}}}
@@ -71,6 +71,7 @@ h1{{font-weight:500;font-size:52px;line-height:1.12;letter-spacing:-1px}}
 def A(name,dur,delay,ease="cubic-bezier(.2,.8,.2,1)"): return f"animation:{name} {dur}s {ease} {delay}s both"
 def head(text,d=0.05):
     lines=text.split("|"); return "".join(f"<h1 style='margin-top:{0 if i==0 else 6}px;{A('fu',.45,d+i*.12)}'>{hl(l)}</h1>" for i,l in enumerate(lines))
+CINE="""<div style='position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.38) 100%)'></div><div style='position:absolute;inset:-20px;pointer-events:none;opacity:.16;mix-blend-mode:multiply;background-image:url(\"data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27160%27 height=%27160%27><filter id=%27n%27><feTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%272%27/></filter><rect width=%27160%27 height=%27160%27 filter=%27url(%23n)%27/></svg>\");animation:grainmv .5s steps(4) infinite'></div>"""
 DNPTS='10,20 90,40 160,34 230,80 300,70 370,120 440,112 510,170 570,186'
 UPPTS='10,186 90,170 160,176 230,130 300,140 370,90 440,98 510,40 570,20'
 def scene_html(sc,dur):
@@ -146,6 +147,17 @@ def scene_html(sc,dur):
         body=head(sc["headline"])+f"<div style='margin-top:20px'>{its}</div>"
     elif t=="object":
         body=head(sc["headline"])+f"<div style='margin:56px auto 0;width:300px;height:300px;border-radius:50%;background:#fff;border:3px solid #111;display:flex;align-items:center;justify-content:center;{A('pop',.6,.4)};{('animation:pop .6s ease .4s both, jolt .5s linear 1.4s both') if BAD else ''}'>{icon(sc['icon'],150,'#d3382c' if BAD else '#111',1.8)}</div><div style='text-align:center;font-size:36px;font-weight:700;margin-top:30px;{A('fu',.5,1.1)}'>{sc['label']}</div>"
+    elif t=="comic":
+        P=sc["panels"]; n=len(P); ph=int(sc.get("ph",(700-(n-1)*12)//n))
+        def panel(i,p):
+            bg=p.get("bg",TONE); d=.35+i*.7
+            dots=f"background-image:radial-gradient(rgba(0,0,0,.16) 2.2px,transparent 2.6px);background-size:12px 12px;"
+            rays=f"<div style='position:absolute;inset:-40%;background:repeating-conic-gradient(rgba(255,255,255,.55) 0 4deg,transparent 4deg 12deg);animation:spin 14s linear infinite;opacity:.9'></div>" if p.get("rays",True) else ""
+            sfx=f"<div style='position:absolute;right:10px;bottom:6px;font-family:Impact,Anton,sans-serif;font-size:{p.get('sfxsize',54)}px;letter-spacing:1px;color:#fff;-webkit-text-stroke:3px #111;text-shadow:4px 4px 0 #111;transform:rotate(-8deg);{A('pop',.35,d+.5)}'>{p['sfx']}</div>" if p.get("sfx") else ""
+            cap=f"<div style='position:absolute;left:0;top:0;background:#ffe27a;border:2px solid #111;border-width:0 2px 2px 0;padding:6px 12px;font-size:17px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;max-width:78%'>{p['cap']}</div>" if p.get("cap") else ""
+            spd=f"<div style='position:absolute;inset:0;{dots}'></div>"
+            return f"<div style='position:relative;height:{ph}px;border:4px solid #111;background:{bg};overflow:hidden;{'transform:rotate('+str(p.get('rot',0))+'deg);'}{A('pop',.45,d)}'>{rays}{spd}<div style='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;{A('pop',.5,d+.15)};{'animation:pop .5s ease '+str(d+.15)+'s both, jolt .5s linear '+str(d+.7)+'s both' if p.get('shake') else ''}'>{icon(p['icon'],p.get('isize',130),'#111',2.2)}</div>{cap}{sfx}</div>"
+        body=f"<div style='display:flex;flex-direction:column;gap:12px;margin-top:{sc.get('top',10)}px'>{''.join(panel(i,p) for i,p in enumerate(P))}</div>"
     elif t=="question":
         body=head(sc["headline"])+f"<div class=card style='margin-top:60px;padding:36px;display:flex;gap:22px;align-items:center;{A('pop',.6,.6)}'><div style='width:70px;height:70px;border-radius:50%;background:{LIME};display:flex;align-items:center;justify-content:center;font-size:42px;flex:none'>?</div><div style='font-size:40px;font-weight:600;line-height:1.2'>{sc['q']}</div></div>"
     extra=""
@@ -154,7 +166,7 @@ def scene_html(sc,dur):
     if False:
         import random; random.seed(7); cols=["#FF6B6B","#FFD23F","#3BCEAC","#5B8DEF","#B084F5","#fff"]
         extra+="".join(f"<i style='position:absolute;left:{random.randint(60,660)}px;top:150px;width:{random.randint(9,15)}px;height:{random.randint(14,22)}px;background:{random.choice(cols)};border:1.5px solid #111;border-radius:3px;animation:fall {random.uniform(1.6,2.6):.2f}s ease-in {sc['confetti']+random.random()*.9:.2f}s both'></i>" for _ in range(34))
-    return f"<html><head><style>{CSS}</style>{extra if BAD else ''}</head><body>{extra if not BAD else extra.replace('<style>.hl{background:'+TONE+'}</style>','')}<div class=safe style='{A('sc',.3,0)}'>{body}</div></body></html>"
+    return f"<html><head><style>{CSS}</style>{extra if BAD else ''}</head><body>{extra if not BAD else extra.replace('<style>.hl{background:'+TONE+'}</style>','')}<div class=safe style='{A('sc',.3,0)}{';animation:sc .3s ease both,camera '+str(dur)+'s linear both' if sc.get('cine') else ''}'>{body}</div>{CINE if sc.get('cine') else ''}</body></html>"
 # ---------- audio fx / music
 def tone(f,d,sr,vol=.25,dec=18):
     t=np.arange(int(d*sr))/sr; return (np.sin(2*np.pi*f*t)*np.exp(-dec*t)*vol).astype(np.float32)
@@ -220,7 +232,7 @@ async def render(scenes,total):
         b=await p.chromium.launch(executable_path=shutil.which("google-chrome") or "/usr/bin/google-chrome",args=["--no-sandbox","--allow-file-access-from-files"])
         pg=await b.new_page(viewport={"width":720,"height":1280},device_scale_factor=1.5)
         for si,(sc,s) in enumerate(zip(spec["scenes"],scenes)):
-            f=os.path.join(TMP,f"s{si}.html"); open(f,"w").write(scene_html(sc,s["dur"])); await pg.goto("file://"+f); await pg.wait_for_timeout(300)
+            f=os.path.join(TMP,f"s{si}.html"); sc["cine"]=spec.get("cine",False); open(f,"w").write(scene_html(sc,s["dur"])); await pg.goto("file://"+f); await pg.wait_for_timeout(300)
             await pg.evaluate("document.getAnimations().forEach(a=>a.pause())")
             if STILLS:
                 tq=max(0.5,s['dur']-0.2); await pg.evaluate("(t)=>document.getAnimations().forEach(a=>a.currentTime=t*1000)",tq); await pg.evaluate(SETCNT,tq)
@@ -236,8 +248,8 @@ async def render(scenes,total):
     return n
 
 QA_JS="""()=>{const sx=88,sr=575,st=167,sb=1000,tol=3,issues=[];
-const safe=document.querySelector('.safe'); const svg=document.querySelector('svg.stage'); const sv=svg?svg.getBoundingClientRect():null;
-const els=[...safe.querySelectorAll('*')].filter(e=>{const c=e.children.length===0||e.tagName==='IMG'||e.tagName==='svg'; return c});
+const safe=document.querySelector('.safe'); safe.style.animation='none'; const svg=document.querySelector('svg.stage'); const sv=svg?svg.getBoundingClientRect():null;
+const els=[...safe.querySelectorAll('*')].filter(e=>{const c=e.children.length===0||e.tagName==='IMG'||e.tagName==='svg'; return c && !(e.parentElement&&e.parentElement.closest('[style*="overflow:hidden"]'))});
 for(const e of els){ if(e.closest('svg')&&e.tagName!=='svg') continue; const r=(e.tagName==='IMG'?e.parentElement:e).getBoundingClientRect(); if(r.width<2||r.height<2) continue; const cs=getComputedStyle(e); if(parseFloat(cs.opacity)<0.05) continue;
  if(r.left<sx-tol||r.right>sr+tol||r.top<st-tol||r.bottom>sb+tol) issues.push('outside safe area: '+(e.className&&e.className.baseVal!==undefined?e.className.baseVal:e.className||e.tagName)+' '+(e.textContent||'').slice(0,30)+' ['+[r.left,r.top,r.right,r.bottom].map(Math.round)+']');
  if(e.scrollWidth>e.clientWidth+2&&cs.overflow!=='visible'&&e.tagName!=='svg') issues.push('text overflow: '+(e.textContent||'').slice(0,30));}

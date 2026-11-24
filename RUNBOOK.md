@@ -14,7 +14,8 @@ You run unattended in the cloud, from a checkout of this repo (tuyoleni/moodbod-
 ## 2b. FORMAT ROTATION (hard rule: reels must NOT look like each other)
 Nine reels in a row used the same template (character scene, number card, character scene, character scene, question). That is banned. Every reel has a top-level `"format"` in its spec, recorded in log.md, and the midnight analysis compares formats.
 Formats and the scene types each is built from (see make_reel.py; new scene types: kinetic, timeline, versus, thread, news, list, object, plus stat styles card/receipt/bars/big):
-- `kinetic-type`: kinetic + stat + kinetic + versus/question. No characters at all.
+- `kinetic-type`: kinetic + stat + kinetic/comic + versus/question. No characters at all.
+- `comic-panels`: comic + comic + stat + versus + list (graphic-novel look).
 - `newsroom`: news + timeline + versus + list.
 - `phone-thread`: thread (real phone chat reenacting the event) + stat + versus + object.
 - `icon-explainer`: object + list + stat + versus.
@@ -22,6 +23,12 @@ Formats and the scene types each is built from (see make_reel.py; new scene type
 - `character-scene`: stage scenes with flat characters (the old template). Use at most 1 reel in 4 and never twice in a row.
 Rules: (1) pick the format by reading the last 4 `format` values in log.md and choosing one NOT in them (character-scene only if absent from the last 3); (2) a reel must use at least 4 different scene types and its scene order must differ from the previous reel's; (3) no more than 2 `stage` scenes per reel, and none outside the character-scene format; (4) vary the background colour, headline length and stat style from the previous reel; (5) invent a new scene variant or prop when none fits, rather than reusing a layout; (6) every 5th reel try something new on purpose (a new scene type in make_reel.py, or a new visual idea) and tag it `format: experiment-<name>` so the analysis can measure it.
 The visuals must come from the story: icons (Lucide), a real-looking phone thread, a newspaper front page, a timeline of the actual dates, a before/after.
+
+## 2c. MOVIE FEEL + NEWS HOOKS (user demand)
+- Cinematic: set `"cine": true` at the top of the spec for vignette, film grain and a slow camera push on every scene. Use the `comic` scene type (halftone panels, sunburst rays, caption boxes, SFX words like CRASH!/BOOM!/HOLD!, Lucide icon per panel) for the dramatic beats. Mix: kinetic type for hooks, comic panels for the incident, timeline/news/versus for facts, thread/object/list for the lesson.
+- Imagery: search the web for the visual references of the real scene (what the place, device, headline or object really looks like) and design from them. Do NOT download or embed photos of real public figures, logos or copyrighted artwork; depict people as generic comic characters and use icons/props for the rest.
+- Hooks: prefer timely, personality- and company-driven news hooks that people are talking about right now (a famous founder returning to a company, a launch, a collapse, a record, a ban, a recall). Search the web for this week's tech and business news first; if a story is hot AND connects to small business, websites, automation or AI, lead with it (still verify with two sources; say "according to X" when only one source). Otherwise use a classic recalled event. Never invent quotes, never put words in a real person's mouth.
+- Every reel should feel like a short film: cold-open hook in the first 2s, escalation, a turn, and a payoff for the viewer's business.
 
 ## 3. Design rules (learned the hard way)
 - EVERY scene gets its own environment that belongs to the story. Research what the real place/situation looks like (WebSearch for references: reporting, photos described in captions) before drawing. The shop counter was only an art style; never reuse one setting across reels or scenes. Use the `prop` library in chars.py (board, carousel, bagpile, suitcase, window, desk, monitor, laptop, papers, clock, ringphone, note, bench, plant, mug, paper_float, ...) and add new props to chars.py when the story needs them.

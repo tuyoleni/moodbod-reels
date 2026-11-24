@@ -1,0 +1,130 @@
+{
+ "slug": "moodbod-pokemon-go-50x",
+ "format": "kinetic-type+comic",
+ "bg": "offwhite",
+ "voice": "af_heart",
+ "scenes": [
+  {
+   "type": "kinetic",
+   "lines": [
+    "Pokémon Go launched in July twenty sixteen. Within fifteen minutes, traffic had passed what the company planned for."
+   ],
+   "headline": "x",
+   "big": [
+    "Launch day.",
+    "[[15 min]]",
+    "past the plan."
+   ],
+   "sub": "Australia and New Zealand, July 2016",
+   "size": 78,
+   "top": 40
+  },
+  {
+   "type": "stat",
+   "style": "bars",
+   "lines": [
+    "The target was one times traffic. The worst case was five times. The real traffic was fifty times."
+   ],
+   "headline": "Planned for 1x.|[[Got 50x.]]",
+   "pre": "",
+   "suf": "x",
+   "to": 50,
+   "sub": "the planned traffic",
+   "bars": [
+    [
+     "Target",
+     3,
+     "#fff"
+    ],
+    [
+     "Worst case",
+     12,
+     "#FFD23F"
+    ],
+    [
+     "Real traffic",
+     100,
+     "#FF9B93"
+    ]
+   ],
+   "tone": "bad",
+   "flash": 1.8
+  },
+  {
+   "type": "comic",
+   "lines": [
+    "The servers buckled, the rollout was paused, and Google's engineers were called in."
+   ],
+   "headline": "x",
+   "panels": [
+    {
+     "icon": "smartphone",
+     "cap": "Launch day, July 2016",
+     "sfx": "WOW!",
+     "bg": "#9be8ff",
+     "shake": true
+    },
+    {
+     "icon": "server-off",
+     "cap": "Servers buckle",
+     "sfx": "CRASH!",
+     "bg": "#FF9B93",
+     "shake": true
+    },
+    {
+     "icon": "pause",
+     "cap": "International rollout paused",
+     "sfx": "HOLD!",
+     "bg": "#ffe27a"
+    }
+   ],
+   "tone": "bad"
+  },
+  {
+   "type": "versus",
+   "lines": [
+    "Small businesses can hit the same wall. A viral post or a big sale arrives, and the orders, bookings and website can't keep up."
+   ],
+   "headline": "Normal day vs|[[viral day.]]",
+   "left": {
+    "title": "Normal day",
+    "icon": "coffee",
+    "items": [
+     "A few orders",
+     "Phone is enough"
+    ]
+   },
+   "right": {
+    "title": "Viral day",
+    "icon": "trending-up",
+    "items": [
+     "Orders pile up",
+     "Messages missed"
+    ]
+   },
+   "tone": "bad"
+  },
+  {
+   "type": "list",
+   "lines": [
+    "Test for the rush, automate the busywork, and keep a plan B."
+   ],
+   "headline": "Before the [[rush:]]",
+   "items": [
+    "Test for the spike",
+    "Automate orders",
+    "Keep a plan B"
+   ]
+  },
+  {
+   "type": "question",
+   "lines": [
+    "If your best day came tomorrow, could your system take it?"
+   ],
+   "headline": "Best day [[tomorrow?]]",
+   "q": "If your best day came tomorrow, could your system take it?"
+  }
+ ],
+ "caption": "On launch, Pokémon Go's traffic went past what its developer planned for within about 15 minutes. Google later said real traffic reached 50 times the target, and 10 times the worst case Niantic had prepared for. The rollout was paused while engineers added capacity.\n\nSmall businesses meet a smaller version of this when a viral post or a big sale arrives and orders, bookings and the website cannot keep up. Test for the spike, automate the busywork and keep a plan B.\n\nIf your best day came tomorrow, could your system take it? DM us the word LAUNCH and we'll show you how to get ready.\n\n#moodbod #automation #smallbusinessnamibia #websitedevelopment #windhoek\n\nSources: Google Cloud blog via The Guardian and GameSpot (Sep 2016), ITPro, Business Insider.",
+ "cine": true
+}

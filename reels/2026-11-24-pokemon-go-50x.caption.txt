@@ -1,0 +1,9 @@
+On launch, Pokémon Go's traffic went past what its developer planned for within about 15 minutes. Google later said real traffic reached 50 times the target, and 10 times the worst case Niantic had prepared for. The rollout was paused while engineers added capacity.
+
+Small businesses meet a smaller version of this when a viral post or a big sale arrives and orders, bookings and the website cannot keep up. Test for the spike, automate the busywork and keep a plan B.
+
+If your best day came tomorrow, could your system take it? DM us the word LAUNCH and we'll show you how to get ready.
+
+#moodbod #automation #smallbusinessnamibia #websitedevelopment #windhoek
+
+Sources: Google Cloud blog via The Guardian and GameSpot (Sep 2016), ITPro, Business Insider.
