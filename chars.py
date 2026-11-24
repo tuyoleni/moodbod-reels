@@ -205,3 +205,14 @@ def prop(o):
         out+=f"<path d='M{x} {y+6} Q{x+w/2} {y+34} {x+w} {y+6}' fill='none' stroke='#d3382c' stroke-width='6'/>"
         return f"<g class='chk'>{out}</g>"
     return _prev_prop2(o)
+
+# ---- props added for the Prime Day reel ----
+_prev_prop3=prop
+def prop(o):
+    k=o.get("name"); x=o.get("x",0); y=o.get("y",0); d=o.get("d",0.3); w=o.get("w",100); h=o.get("h",70)
+    if k=="parcel":   # cardboard parcel with tape and label
+        pp=f"animation:pop .5s ease {d}s both;transform-box:fill-box;transform-origin:center bottom"
+        return (f"<g class='chk' style='{pp}'><rect x='{x}' y='{y}' width='{w}' height='{h}' rx='4' fill='#d9b27c' stroke='{INK}' stroke-width='3'/>"
+                f"<rect x='{x+w/2-8}' y='{y}' width='16' height='{h}' fill='#c99a5b' stroke='{INK}' stroke-width='2'/>"
+                f"<rect x='{x+w*0.1}' y='{y+h*0.5}' width='{w*0.22}' height='{h*0.28}' rx='2' fill='#fff' stroke='{INK}' stroke-width='2'/></g>")
+    return _prev_prop3(o)

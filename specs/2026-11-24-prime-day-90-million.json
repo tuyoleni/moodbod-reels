@@ -1,0 +1,330 @@
+{
+ "slug": "2026-11-24-prime-day-90-million",
+ "bg": "peach",
+ "voice": "af_bella",
+ "scenes": [
+  {
+   "type": "stage",
+   "lines": [
+    "Amazon lost an estimated ninety million dollars in seventy-five minutes."
+   ],
+   "headline": "$90 million|[[in 75 minutes.]]",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "window",
+     "x": 70,
+     "y": 90,
+     "w": 140,
+     "h": 100
+    },
+    {
+     "k": "prop",
+     "name": "clock",
+     "x": 420,
+     "y": 110,
+     "w": 70
+    },
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 60,
+     "y": 330,
+     "w": 270,
+     "h": 90
+    },
+    {
+     "k": "prop",
+     "name": "monitor",
+     "x": 100,
+     "y": 210,
+     "w": 150,
+     "h": 100,
+     "err": true,
+     "lines": [
+      "Sorry, something",
+      "went wrong"
+     ],
+     "d": 0.5
+    },
+    {
+     "k": "prop",
+     "name": "mug",
+     "x": 275,
+     "y": 298,
+     "d": 0.8
+    },
+    {
+     "k": "person",
+     "x": 360,
+     "y": 196,
+     "s": 1.14,
+     "skin": "c",
+     "shirt": "blue",
+     "pose": "shrug",
+     "expr": "worried",
+     "d": 0.4,
+     "hair": "short"
+    },
+    {
+     "k": "prop",
+     "name": "plant",
+     "x": 500,
+     "y": 392
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "It was Prime Day, July twenty eighteen. Shoppers rushed in for deals, and many got error pages with dog pictures instead."
+   ],
+   "headline": "Prime Day,|[[error pages.]]",
+   "chip": "16 JUL 2018",
+   "objects": [
+    {
+     "k": "sign",
+     "x": 60,
+     "y": 100,
+     "text": "DEALS",
+     "color": "#d3382c",
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "bench",
+     "x": 100,
+     "y": 360,
+     "w": 300,
+     "h": 22,
+     "legs": 46
+    },
+    {
+     "k": "person",
+     "x": 140,
+     "y": 196,
+     "s": 1.14,
+     "skin": "a",
+     "shirt": "pink",
+     "pose": "phone",
+     "expr": "worried",
+     "hair": "bun",
+     "d": 0.5
+    },
+    {
+     "k": "person",
+     "x": 270,
+     "y": 196,
+     "s": 1.14,
+     "skin": "e",
+     "shirt": "lime",
+     "pose": "shrug",
+     "expr": "frown",
+     "d": 0.8
+    },
+    {
+     "k": "phone",
+     "x": 410,
+     "y": 170,
+     "w": 110,
+     "h": 170,
+     "lines": [
+      "Sorry,",
+      "error"
+     ],
+     "spinner": true,
+     "d": 1.0
+    },
+    {
+     "k": "bubble",
+     "x": 240,
+     "y": 108,
+     "text": "Ugh!",
+     "w": 120,
+     "h": 56,
+     "d": 1.5,
+     "tail": "left"
+    }
+   ]
+  },
+  {
+   "type": "stat",
+   "style": "receipt",
+   "lines": [
+    "One Click Retail guessed about one point two million dollars lost every minute.",
+    "The total is an estimate, since the outage varied."
+   ],
+   "headline": "The estimated|[[bill.]]",
+   "rows": [
+    [
+     "Lost per minute",
+     "$1.2M"
+    ],
+    [
+     "Minutes affected",
+     "~75"
+    ]
+   ],
+   "sub": "Estimated lost sales",
+   "pre": "$",
+   "suf": "M",
+   "to": 90,
+   "dec": 0,
+   "stamp": "EST.",
+   "tone": "bad"
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "Amazon says shoppers still bought over a hundred million products. It could afford a bad hour."
+   ],
+   "headline": "100M+ products|[[still sold.]]",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "parcel",
+     "x": 60,
+     "y": 360,
+     "w": 100,
+     "h": 70,
+     "d": 0.3
+    },
+    {
+     "k": "prop",
+     "name": "parcel",
+     "x": 170,
+     "y": 360,
+     "w": 100,
+     "h": 70,
+     "d": 0.45
+    },
+    {
+     "k": "prop",
+     "name": "parcel",
+     "x": 115,
+     "y": 290,
+     "w": 100,
+     "h": 70,
+     "d": 0.6
+    },
+    {
+     "k": "prop",
+     "name": "parcel",
+     "x": 280,
+     "y": 360,
+     "w": 90,
+     "h": 70,
+     "d": 0.75
+    },
+    {
+     "k": "person",
+     "x": 400,
+     "y": 196,
+     "s": 1.14,
+     "skin": "b",
+     "shirt": "cream",
+     "pose": "up",
+     "expr": "smile",
+     "anim": "cheer",
+     "d": 0.5
+    },
+    {
+     "k": "bubble",
+     "x": 300,
+     "y": 110,
+     "text": "100M+",
+     "w": 150,
+     "h": 56,
+     "d": 1.2,
+     "tail": "right"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "lines": [
+    "A small business can't. If your order page or website breaks when customers are ready to pay, they simply buy somewhere else."
+   ],
+   "headline": "Small shop?|[[Customers leave.]]",
+   "tone": "bad",
+   "objects": [
+    {
+     "k": "prop",
+     "name": "desk",
+     "x": 70,
+     "y": 330,
+     "w": 310,
+     "h": 90
+    },
+    {
+     "k": "awning",
+     "x": 70,
+     "y": 80,
+     "w": 330
+    },
+    {
+     "k": "person",
+     "x": 110,
+     "y": 196,
+     "s": 1.14,
+     "skin": "d",
+     "shirt": "lav",
+     "pose": "shrug",
+     "expr": "worried",
+     "apron": "#e9d3b0",
+     "hair": "long",
+     "d": 0.4
+    },
+    {
+     "k": "prop",
+     "name": "ringphone",
+     "x": 280,
+     "y": 272,
+     "d": 0.9
+    },
+    {
+     "k": "prop",
+     "name": "parcel",
+     "x": 315,
+     "y": 296,
+     "w": 55,
+     "h": 34,
+     "d": 0.7
+    },
+    {
+     "k": "phone",
+     "x": 420,
+     "y": 190,
+     "w": 100,
+     "h": 170,
+     "lines": [
+      "Order",
+      "failed"
+     ],
+     "spinner": true,
+     "d": 1.0
+    },
+    {
+     "k": "bubble",
+     "x": 240,
+     "y": 150,
+     "text": "Hello?",
+     "w": 130,
+     "h": 56,
+     "d": 1.6,
+     "tail": "left"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "lines": [
+    "If your website broke at your busiest hour, who would catch those customers?"
+   ],
+   "headline": "Your busiest|[[hour.]]",
+   "q": "If your site broke then, who would catch the customers?"
+  }
+ ],
+ "caption": "An estimated $90 million gone in 75 minutes.\n\nOn Prime Day, 16 July 2018, Amazon's site hit problems within minutes of the sale starting, and shoppers saw error pages with dog pictures. One Click Retail estimated the outage at around 75 minutes and about $1.2 million a minute, roughly $90 million in lost sales (other estimates ran from $72M to $99M, and nobody can pin it exactly). Amazon said shoppers still bought over 100 million products.\n\nAmazon can absorb a bad hour. A small business in Namibia can't. If your website, booking link or WhatsApp order flow breaks when customers are ready to pay, they buy somewhere else.\n\nIf your site broke at your busiest hour, who would catch those customers? DM us the word HOUR and we'll check yours for you.\n\n#moodbod #websitedesign #smallbusinessnamibia #windhoek #namibia\n\nSources: TechCrunch, \"What Amazon lost (and made) on Amazon Prime Day\" (18 Jul 2018); Fortune (16 Jul 2018) on the error pages and start time; Fox Business (19 Jul 2018) on the $72M-$99M estimates."
+}
