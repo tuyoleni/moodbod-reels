@@ -13,3 +13,4 @@
 2026-11-24 | 15:45 | aws-empty-record | AWS us-east-1 outage 20 Oct 2025 | sky | One empty record took Snapchat, Venmo and Fortnite offline | BACKUP | DRAFT - NOT POSTED: daily cap reached (5 posts already today, limit 4) | - | newsroom
 | 2026-11-24 | 16:20 | hubspot-founder-returns | HubSpot brings back co-founder as CEO | red/dusk | HubSpot just swapped its CEO | OWN | https://www.instagram.com/reel/DgIIXmXjeL7/ | 18169523002498777 | cinema |
 2026-11-24 | 20:20 | (none) | run skipped | - | - | - | SKIPPED: daily cap reached (6 posts already today, limit 4); no reel built | - | -
+2026-11-25 | 20:34 | jcrew-hang-on-a-sec | J.Crew Black Friday site crash 23 Nov 2018 | peach | What does five hours of 'hang on a sec' cost on Black Friday? | FRIDAY | https://www.instagram.com/reel/DgLLvyehGG6/ | 18118295333589544 | phone-thread
